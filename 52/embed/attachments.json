@@ -1,0 +1,4 @@
+{
+  "main": "embed/linq_demo.mp",
+  "linq/linq": "embed/linq/linq.mp"
+}
