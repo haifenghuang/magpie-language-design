@@ -1,0 +1,47 @@
+<html>  
+    <head>
+        <title>Magpie playground</title>
+        <meta charset="utf-8"/>
+        <script src="wasm_exec.js"></script>
+
+        <script>
+            const go = new Go();
+            WebAssembly.instantiateStreaming(fetch("magpie.wasm"), go.importObject).then((result) => {
+                go.run(result.instance);
+            });
+        </script>
+
+    </head>
+    <body>
+        Code:<br>
+        <textarea id="code" name="code" cols="80" rows="13">
+println("hello, 黄")
+
+三 = 3
+println(三)
+
+println(true)
+println([1, "2"])
+println({"a": 1, "b": 2})
+println((1,2,3))
+println(nil)
+   
+        </textarea>
+
+    <br><br>
+
+    <button type="button" onclick="run()">Run</button><br><br>
+    Result:<br>
+    <textarea id="result" cols="80" rows="12" style="background-color:#99FFFF;" readonly></textarea>
+    <script>
+        function run() {
+          let code = document.getElementById("code").value;
+          let {output} = magpie_run_code(code)  //evaluate code
+          document.getElementById("result").value = output;
+    
+        }
+    </script>
+
+</body>
+</html> 
+
