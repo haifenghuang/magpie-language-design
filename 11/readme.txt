@@ -1,0 +1,1 @@
+Add 'function literal' & 'function call' handling

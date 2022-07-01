@@ -1,0 +1,1 @@
+Add 'Hash' support
