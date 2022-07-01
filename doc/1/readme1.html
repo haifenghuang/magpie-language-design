@@ -1,0 +1,2545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="简单计算器">简单计算器</h1>
+<h2 class="atx" id="设计语言的标准流程">设计语言的“标准流程”</h2>
+<p>在实现计算器之前，我们需要简单的了解一下，设计一门语言的所谓的“标准”流程。</p>
+<blockquote>
+<p>这里所谓的“标准”是针对于树遍历解释器（Tree walking interpreter）来说的。</p>
+</blockquote>
+<p><img alt="language-flow" src="language-flow.png"></p>
+<p>这里的步骤从表面上看起来还是比较简单的：</p>
+<ol>
+<li>词法分析器接受输入（一般是文件或者字符串），然后输出一系列的词元（Token）。</li>
+<li>语法分析器对词元（Token）进行处理，生成对应的抽象语法树（AST）。</li>
+<li>解释器对AST进行解释，执行相应的脚本动作。</li>
+</ol>
+<blockquote>
+<p>对于词法分析器，有的语言使用Scanner术语，有的使用Lexer术语，但结果都是输出词元（Token）。</p>
+<p>AST : Abstract Syntax Tree（抽象语法树），对于代码来说，其实就是一个<code>go</code>语言的结构。</p>
+</blockquote>
+<p>请记住上面的“标准”流程。下面让我们开始一步一步实现我们的简单计算器。</p>
+<h2 class="atx" id="词元（token）">词元（Token）</h2>
+<p>【词元】简单的说，就是解析语言的最小单元。</p>
+<p>这里还是使用例子来进行说明，假设我们的语言支持如下的语句（statement）：</p>
+<pre><code class="fenced-code-block language-javascript"><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">10</span> <span class="token operator">+</span> <span class="token number">20</span><span class="token punctuation">;</span></code></pre>
+<p>我们需要把这个句子拆分成一个个独立的单元（类似于中文语言中一句话中的单词）。我们的词法分析器（Lexer），遇到上面的输入，输出的词元（Token）类型（Token Type）如下：</p>
+<pre><code class="fenced-code-block">TOKEN_LET             // let
+TOKEN_IDENTIFIER      // num
+TOKEN_ASSIGN          // =
+TOKEN_NUMBER          // 10
+TOKEN_PLUS            // +
+TOKEN_NUMBER          // 20
+TOKEN_SEMICOLON       // ;</code></pre>
+<p>那么这里所说的词元（Token）需要包含哪些信息呢？一个词元（Token）需要包含如下的信息：</p>
+<ol>
+<li>词元类型（Token Type)，通常将其定义为常量</li>
+<li>词元位置（Position），作为将来调试用或者报错用</li>
+<li>词元字面量（Literal），词元所表示的实际值（或者字面量）</li>
+</ol>
+<blockquote>
+<p>字面量：顾名思义就是字面本身的值。例如<code>2.5</code>的字面量就是<code>2.5</code>。<code>Hello</code>的字面量就是<code>Hello</code>, <code>var1</code>的字面量就是<code>var1</code>。</p>
+</blockquote>
+<h3 class="atx" id="词元类型（token-type）">词元类型（Token Type）</h3>
+<p>假设我们的简单四则运算器的输入如下：</p>
+<pre><code class="fenced-code-block">2 + (3 * 4) / ( 6 - 3 ) + 10 * 1.5 + 2 ** 3</code></pre>
+<p>从上面的例子中可以看出，这里的Token类型包含【+】，【-】，【<em>】，【/】，【*</em>】，【数字】，【括号（包括左括号和右括号）】。</p>
+<p>词元类型一般是用常量来定义的，对于我们将要实现的简单四则运算器，词元类型定义如下：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//token.go</span>
+<span class="token keyword">type</span> TokenType <span class="token builtin">int</span> <span class="token comment">//定义词元类型为一个整形</span>
+
+<span class="token comment">//定义Token类型</span>
+<span class="token keyword">const</span> <span class="token punctuation">(</span>
+    TOKEN_ILLEGAL TokenType <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token boolean">iota</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// 非法词元</span>
+    TOKEN_EOF                            <span class="token comment">// 文件(或输入)结束Token（EOF：End of file)</span>
+
+    TOKEN_PLUS     <span class="token comment">// +</span>
+    TOKEN_MINUS    <span class="token comment">// -</span>
+    TOKEN_MULTIPLY <span class="token comment">// *</span>
+    TOKEN_DIVIDE   <span class="token comment">// '/'</span>
+    TOKEN_MOD      <span class="token comment">// '%'（取模）</span>
+    TOKEN_POWER    <span class="token comment">// ** （开方）</span>
+
+    TOKEN_LPAREN <span class="token comment">// (</span>
+    TOKEN_RPAREN <span class="token comment">// )</span>
+
+    TOKEN_NUMBER <span class="token comment">//数字，例如10、10.1等</span>
+<span class="token punctuation">)</span></code></pre>
+<h3 class="atx" id="词元位置（token-position）">词元位置（Token Position）</h3>
+<p>【位置】信息需要有诸如<code>行号</code>，<code>列号</code>等信息，下面是其定义：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//token.go</span>
+
+<span class="token comment">//词元的【位置】</span>
+<span class="token keyword">type</span> Position <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    Filename <span class="token builtin">string</span> <span class="token comment">//文件名(当脚本的输入为字符串的时候，为空)</span>
+    Offset   <span class="token builtin">int</span> <span class="token comment">//当前词元相对于整个文件或者输入的偏移量(暂时作用不大)</span>
+    Line     <span class="token builtin">int</span> <span class="token comment">//当前词元所在的行号</span>
+    Col      <span class="token builtin">int</span> <span class="token comment">//当前词元所在的列号</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//调试用</span>
+<span class="token comment">//可以使用类似`fmt.Printf("Position=%s\n", position)`的语句来打印Position结构</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p Position<span class="token punctuation">)</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> msg <span class="token builtin">string</span>
+    <span class="token keyword">if</span> p<span class="token punctuation">.</span>Filename <span class="token operator">==</span> <span class="token string">""</span> <span class="token punctuation">{</span>
+        msg <span class="token operator">=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprint</span><span class="token punctuation">(</span><span class="token string">" &lt;"</span><span class="token punctuation">,</span> p<span class="token punctuation">.</span>Line<span class="token punctuation">,</span> <span class="token string">":"</span><span class="token punctuation">,</span> p<span class="token punctuation">.</span>Col<span class="token punctuation">,</span> <span class="token string">"&gt; "</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        msg <span class="token operator">=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprint</span><span class="token punctuation">(</span><span class="token string">" &lt;"</span><span class="token punctuation">,</span> p<span class="token punctuation">.</span>Filename<span class="token punctuation">,</span> <span class="token string">":"</span><span class="token punctuation">,</span> p<span class="token punctuation">.</span>Line<span class="token punctuation">,</span> <span class="token string">":"</span><span class="token punctuation">,</span> p<span class="token punctuation">.</span>Col<span class="token punctuation">,</span> <span class="token string">"&gt; "</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> msg
+<span class="token punctuation">}</span>
+
+<span class="token comment">//位置的字符串表示。调试用（脚本错误的时候会报告相应的行号）</span>
+<span class="token comment">//这里我们不能使用`Line()`作为函数名, 因为`Line`是Position结构的字段名</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p Position<span class="token punctuation">)</span> <span class="token function">Sline</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span> <span class="token comment">//Sline: String line</span>
+    <span class="token keyword">var</span> msg <span class="token builtin">string</span>
+    <span class="token keyword">if</span> p<span class="token punctuation">.</span>Filename <span class="token operator">==</span> <span class="token string">""</span> <span class="token punctuation">{</span>
+        msg <span class="token operator">=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprint</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>Line<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        msg <span class="token operator">=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprint</span><span class="token punctuation">(</span><span class="token string">" &lt;"</span><span class="token punctuation">,</span> p<span class="token punctuation">.</span>Filename<span class="token punctuation">,</span> <span class="token string">":"</span><span class="token punctuation">,</span> p<span class="token punctuation">.</span>Line<span class="token punctuation">,</span> <span class="token string">"&gt; "</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> msg
+<span class="token punctuation">}</span></code></pre>
+<p>这里的Position结构浅显易懂，应该没有太多需要解释的地方。</p>
+<h3 class="atx" id="词元结构（token-structure）">词元结构（Token Structure）</h3>
+<p>有了上面的说明，下面来定义我们的词元结构。大致如下：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//token.go</span>
+
+<span class="token comment">//词元结构</span>
+<span class="token keyword">type</span> Token <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    Pos     Position    <span class="token comment">//词元的位置信息</span>
+    Type    TokenType   <span class="token comment">//词元的类型</span>
+    Literal <span class="token builtin">string</span>      <span class="token comment">//词元的字面量</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//词元类型的字符串表示（调试或者测试用）</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>tt TokenType<span class="token punctuation">)</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> tt <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> TOKEN_ILLEGAL<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"ILLEGAL"</span>
+    <span class="token keyword">case</span> TOKEN_EOF<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"EOF"</span>
+
+    <span class="token keyword">case</span> TOKEN_PLUS<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"+"</span>
+    <span class="token keyword">case</span> TOKEN_MINUS<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"-"</span>
+    <span class="token keyword">case</span> TOKEN_MULTIPLY<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"*"</span>
+    <span class="token keyword">case</span> TOKEN_DIVIDE<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"/"</span>
+    <span class="token keyword">case</span> TOKEN_MOD<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"%"</span>
+    <span class="token keyword">case</span> TOKEN_POWER<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"**"</span>
+
+    <span class="token keyword">case</span> TOKEN_LPAREN<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"("</span>
+    <span class="token keyword">case</span> TOKEN_RPAREN<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">")"</span>
+
+    <span class="token keyword">case</span> TOKEN_NUMBER<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"NUMBER"</span>
+
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">"UNKNOWN"</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//词元的字符串表示。调试用</span>
+<span class="token comment">//可以使用类似`fmt.Printf("token=%s\n", tok)`的语句来打印词元结构</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>t Token<span class="token punctuation">)</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"Position: %s, Type: %s, Literal: %s"</span><span class="token punctuation">,</span> t<span class="token punctuation">.</span>Pos<span class="token punctuation">,</span> t<span class="token punctuation">.</span>Type<span class="token punctuation">,</span> t<span class="token punctuation">.</span>Literal<span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>为了让读者加深理解，这里再次举个例子：</p>
+<pre><code class="fenced-code-block language-go"><span class="token number">2</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">10</span></code></pre>
+<p>对于上面的例子，共有10个词元类型(Token Type)：</p>
+<pre><code class="fenced-code-block">TOKEN_NUMBER      ---&gt; 字面量是【2】
+TOKEN_PLUS        ---&gt; 字面量是【+】
+TOKEN_LPAREN      ---&gt; 字面量是【(】
+TOKEN_NUMBER      ---&gt; 字面量是【3】
+TOKEN_MULTIPLY    ---&gt; 字面量是【*】
+TOKEN_NUMBER      ---&gt; 字面量是【5】
+TOKEN_RPAREN      ---&gt; 字面量是【)】
+TOKEN_MINUS       ---&gt; 字面量是【-】
+TOKEN_NUMBER      ---&gt; 字面量是【10】
+TOKEN_EOF         ---&gt; 做为结尾标识</code></pre>
+<blockquote>
+<p>注：词法分析器（Lexer）会忽略空格</p>
+</blockquote>
+<p>对应着上面的计算式，10个词元结构的内容如下：</p>
+<p><img alt="token" src="token.png"></p>
+<h2 class="atx" id="词法分析器（lexer）">词法分析器（Lexer）</h2>
+<p>结合本节开头的图，我们知道词法分析器的作用是将输入进行分析，最后输出词元（Token）。</p>
+<p>下面我们来分析一下，词法分析器需要哪些信息呢？</p>
+<ol>
+<li>文件名（从文件读取脚本输入时使用）</li>
+<li>输入字节流（从文件读取时，实际是将文件整个内容读到输入字节流中）</li>
+<li>当前正在处理的字符</li>
+<li>当前正在处理的字符的位置</li>
+<li>当前正在处理的字符的下一个位置</li>
+<li>行号和列号</li>
+</ol>
+<p>有了上面的信息后，我们的词法分析器（Lexer）结构如下：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token keyword">type</span> Lexer <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    filename     <span class="token builtin">string</span> <span class="token comment">//文件名</span>
+    input        <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">rune</span> <span class="token comment">//输入（如果文件名不为空，会将文件整个文件的内容读入input中）</span>
+    ch           <span class="token builtin">rune</span>   <span class="token comment">//当前正在处理的字符</span>
+    position     <span class="token builtin">int</span>    <span class="token comment">//当前正在处理的字符的位置</span>
+    readPosition <span class="token builtin">int</span>    <span class="token comment">//当前正在处理的字符的下一个位置</span>
+
+    line <span class="token builtin">int</span> <span class="token comment">//行号</span>
+    col  <span class="token builtin">int</span> <span class="token comment">//列号</span>
+<span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p>这里input使用<code>[]rune</code>，ch使用<code>rune</code>的目的主要是为了能够处理中文之类的变量名。</p>
+</blockquote>
+<h3 class="atx" id="读取字符">读取字符</h3>
+<p>词法分析器需要一个字符一个字符的读取“输入”：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>l <span class="token operator">*</span>Lexer<span class="token punctuation">)</span> <span class="token function">readNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//读取下一个字符</span>
+    <span class="token keyword">if</span> l<span class="token punctuation">.</span>readPosition <span class="token operator">&gt;=</span> <span class="token function">len</span><span class="token punctuation">(</span>l<span class="token punctuation">.</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//如果读取的位置大于等于输入的长度，则认为读到了结束。</span>
+        l<span class="token punctuation">.</span>ch <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment">//读取结束</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        l<span class="token punctuation">.</span>ch <span class="token operator">=</span> l<span class="token punctuation">.</span>input<span class="token punctuation">[</span>l<span class="token punctuation">.</span>readPosition<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> l<span class="token punctuation">.</span>ch <span class="token operator">==</span> <span class="token char">'\n'</span> <span class="token punctuation">{</span> <span class="token comment">//当遇到'\n'时</span>
+            l<span class="token punctuation">.</span>col <span class="token operator">=</span> <span class="token number">0</span>
+            l<span class="token punctuation">.</span>line<span class="token operator">++</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            l<span class="token punctuation">.</span>col <span class="token operator">+=</span> <span class="token number">1</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    l<span class="token punctuation">.</span>position <span class="token operator">=</span> l<span class="token punctuation">.</span>readPosition
+    l<span class="token punctuation">.</span>readPosition<span class="token operator">++</span> <span class="token comment">//将readPosition指向下一个字符</span>
+<span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p>对于第4行的代码，有的读者可能就会问了，如果输入中有0字符的话，那么是不是就会有问题？答案是不会，因为如果输入中有0的话，<code>l.ch</code>中存放的是'0'，而不是0。</p>
+</blockquote>
+<p>词法分析器，还要根据输入来初始化Lexer结构：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token keyword">func</span> <span class="token function">NewLexer</span><span class="token punctuation">(</span>input <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token operator">*</span>Lexer <span class="token punctuation">{</span>
+    l <span class="token operator">:=</span> <span class="token operator">&amp;</span>Lexer<span class="token punctuation">{</span>input<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token function">rune</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span><span class="token punctuation">}</span> <span class="token comment">//将input字符串转换为rune数组</span>
+    l<span class="token punctuation">.</span>ch <span class="token operator">=</span> <span class="token char">' '</span>
+    l<span class="token punctuation">.</span>position <span class="token operator">=</span> <span class="token number">0</span>
+    l<span class="token punctuation">.</span>readPosition <span class="token operator">=</span> <span class="token number">0</span>
+
+    l<span class="token punctuation">.</span>line <span class="token operator">=</span> <span class="token number">1</span>
+    l<span class="token punctuation">.</span>col <span class="token operator">=</span> <span class="token number">0</span>
+
+    <span class="token comment">//预先读取一个字符，这样position的值为0，readPostion的值为1。</span>
+    <span class="token comment">//就是说下面的语句执行后，当前字符位置为position，下一个字符位置为readPosition。</span>
+    <span class="token comment">//这样，初始化后，position和readPosition都指向了正确的位置。</span>
+    l<span class="token punctuation">.</span><span class="token function">readNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment">//0xFEFF: BOM(byte order mark)</span>
+    <span class="token keyword">if</span> l<span class="token punctuation">.</span>ch <span class="token operator">==</span> <span class="token number">0xFEFF</span> <span class="token punctuation">{</span>
+        l<span class="token punctuation">.</span><span class="token function">readNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//忽略文件头的BOM</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> l
+<span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p>关于BOM（Byte order mark）的相关信息，请读者参照百度的文档<a href="https://baike.baidu.com/item/BOM/2790364?fr=aladdin">https://baike.baidu.com/item/BOM/2790364?fr=aladdin</a></p>
+</blockquote>
+<p>有时候，我们还需要词法分析器能够获取下一个字符的值，而并不读取下一个字符。因此我们还需要给词法分析器提供一个<code>peek()</code>函数，来获取（并非读取）下一个字符。</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>l <span class="token operator">*</span>Lexer<span class="token punctuation">)</span> <span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">rune</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> l<span class="token punctuation">.</span>readPosition <span class="token operator">&gt;=</span> <span class="token function">len</span><span class="token punctuation">(</span>l<span class="token punctuation">.</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> l<span class="token punctuation">.</span>input<span class="token punctuation">[</span>l<span class="token punctuation">.</span>readPosition<span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+<p>有的细心的读者可能会有疑问，获取下一个字符（而不读取）的意义是啥？下面我们举个例子：</p>
+<pre><code class="fenced-code-block language-go"><span class="token number">2</span> <span class="token operator">*</span><span class="token operator">*</span> <span class="token number">3</span></code></pre>
+<blockquote>
+<p>这里的<code>**</code>表示开方。 2 ** 3 = 2^3^ = 8</p>
+</blockquote>
+<p>当我们遇到第一个 <code>*</code>的时候，我们需要预判断下一个字符是否为<code>*</code>。如果下一个字符是<code>*</code>，那么我们就能够判断需要处理的词元为<code>**</code>。如果不是，那么我们就知道现在处理的词元为<code>*</code>。如果读者还是不能够很明白其中的道理，不用担心，请继续往下读。</p>
+<p>对于词法分析器来说，需要忽略输入中的空格（这里的空格包括回车换行，TAB键，空白）。我们的词法分析器还需要提供一个忽略空格的函数：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>l <span class="token operator">*</span>Lexer<span class="token punctuation">)</span> <span class="token function">skipWhitespace</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> unicode<span class="token punctuation">.</span><span class="token function">IsSpace</span><span class="token punctuation">(</span>l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        l<span class="token punctuation">.</span><span class="token function">readNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>我们的简单四则运算器主要处理的是数字的运算，所以我们还需要提供一个判断数字的函数：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token keyword">func</span> <span class="token function">isDigit</span><span class="token punctuation">(</span>ch <span class="token builtin">rune</span><span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token char">'0'</span> <span class="token operator">&lt;=</span> ch <span class="token operator">&amp;&amp;</span> ch <span class="token operator">&lt;=</span> <span class="token char">'9'</span>
+<span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p>这个函数是一个工具（utility）函数。它接受一个类型为<code>rune</code>的<code>ch</code>参数，然后判断这个参数是否为数字。它并不依赖于Lexer结构中的任何信息，所以并不是Lexer的成员函数。</p>
+</blockquote>
+<p>我们的词法分析器（Lexer）还需要一个简单的生成词元（Token）的工具函数（utility function）：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token keyword">func</span> <span class="token function">newToken</span><span class="token punctuation">(</span>tokenType token<span class="token punctuation">.</span>TokenType<span class="token punctuation">,</span> ch <span class="token builtin">rune</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Token <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> token<span class="token punctuation">.</span>Token<span class="token punctuation">{</span>Type<span class="token punctuation">:</span> tokenType<span class="token punctuation">,</span> Literal<span class="token punctuation">:</span> <span class="token function">string</span><span class="token punctuation">(</span>ch<span class="token punctuation">)</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 class="atx" id="读取数字">读取数字</h3>
+<p>我们的简单四则运算器需要处理类似<code>12.75</code>之类的浮点数。有了<code>isDigit()</code>这个工具函数（utility function）后，我们就可以写一个处理数字的函数：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>l <span class="token operator">*</span>Lexer<span class="token punctuation">)</span> <span class="token function">readNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> ret <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">rune</span>
+
+    ch <span class="token operator">:=</span> l<span class="token punctuation">.</span>ch
+    ret <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>ret<span class="token punctuation">,</span> ch<span class="token punctuation">)</span>
+    l<span class="token punctuation">.</span><span class="token function">readNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> <span class="token function">isDigit</span><span class="token punctuation">(</span>l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span> <span class="token operator">||</span> l<span class="token punctuation">.</span>ch <span class="token operator">==</span> <span class="token char">'.'</span> <span class="token punctuation">{</span> <span class="token comment">//当前字符是数字或者'.'的时候，就继续读取</span>
+        ret <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>ret<span class="token punctuation">,</span> l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span>
+        l<span class="token punctuation">.</span><span class="token function">readNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token function">string</span><span class="token punctuation">(</span>ret<span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p>注：这个处理数字的函数，其实是有些问题的。第9行判断如果字符为数字或者点，就继续。那么如果是类似<code>99...2345</code>这样的输入，那么这里的处理就会有问题。</p>
+</blockquote>
+<p>词法分析器（Lexer）还需要获取当前词元（Token）的位置信息。所以这里我们提供了获取位置信息的函数：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>l <span class="token operator">*</span>Lexer<span class="token punctuation">)</span> <span class="token function">getPos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> token<span class="token punctuation">.</span>Position<span class="token punctuation">{</span>
+        Filename<span class="token punctuation">:</span> l<span class="token punctuation">.</span>filename<span class="token punctuation">,</span>
+        Offset<span class="token punctuation">:</span>   l<span class="token punctuation">.</span>position<span class="token punctuation">,</span>
+        Line<span class="token punctuation">:</span>     l<span class="token punctuation">.</span>line<span class="token punctuation">,</span>
+        Col<span class="token punctuation">:</span>      l<span class="token punctuation">.</span>col<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>这个函数应该也是比较浅显易懂，无需太多解释吧。</p>
+<h3 class="atx" id="获取下一个词元（token）">获取下一个词元（Token）</h3>
+<p>说了这么多，读者可能已经有点不耐烦了，词法分析器（Lexer）的输出是词元（Token）。怎么还没有获取词元（Token）的函数呢？好吧，我承认这里有些啰嗦了。下面是我们真正的主角开始登场了：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//lexer.go</span>
+<span class="token comment">//获取下一个词元</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>l <span class="token operator">*</span>Lexer<span class="token punctuation">)</span> <span class="token function">NextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Token <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> tok token<span class="token punctuation">.</span>Token
+
+    l<span class="token punctuation">.</span><span class="token function">skipWhitespace</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//忽略所有的空格</span>
+
+    pos <span class="token operator">:=</span> l<span class="token punctuation">.</span><span class="token function">getPos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//获取Token的位置信息</span>
+
+    <span class="token keyword">switch</span> l<span class="token punctuation">.</span>ch <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token char">'+'</span><span class="token punctuation">:</span>
+        tok <span class="token operator">=</span> <span class="token function">newToken</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_PLUS<span class="token punctuation">,</span> l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token char">'-'</span><span class="token punctuation">:</span>
+        tok <span class="token operator">=</span> <span class="token function">newToken</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_MINUS<span class="token punctuation">,</span> l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token char">'*'</span><span class="token punctuation">:</span>
+        <span class="token comment">//这里需要获取下一个字符，判断是否是`**`,还是一个简单的`*`</span>
+        <span class="token keyword">if</span> l<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token char">'*'</span> <span class="token punctuation">{</span>
+            tok <span class="token operator">=</span> token<span class="token punctuation">.</span>Token<span class="token punctuation">{</span>Type<span class="token punctuation">:</span> token<span class="token punctuation">.</span>TOKEN_POWER<span class="token punctuation">,</span> Literal<span class="token punctuation">:</span> <span class="token function">string</span><span class="token punctuation">(</span>l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span> <span class="token operator">+</span> 
+                              <span class="token function">string</span><span class="token punctuation">(</span>l<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+            l<span class="token punctuation">.</span><span class="token function">readNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token comment">//下一个字符不是`*`</span>
+            tok <span class="token operator">=</span> <span class="token function">newToken</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_MULTIPLY<span class="token punctuation">,</span> l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token char">'/'</span><span class="token punctuation">:</span>
+        tok <span class="token operator">=</span> <span class="token function">newToken</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_DIVIDE<span class="token punctuation">,</span> l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token char">'%'</span><span class="token punctuation">:</span>
+        tok <span class="token operator">=</span> <span class="token function">newToken</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_MOD<span class="token punctuation">,</span> l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token char">'('</span><span class="token punctuation">:</span>
+        tok <span class="token operator">=</span> <span class="token function">newToken</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_LPAREN<span class="token punctuation">,</span> l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token char">')'</span><span class="token punctuation">:</span>
+        tok <span class="token operator">=</span> <span class="token function">newToken</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_RPAREN<span class="token punctuation">,</span> l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token number">0</span><span class="token punctuation">:</span>
+        tok<span class="token punctuation">.</span>Literal <span class="token operator">=</span> <span class="token string">"&lt;EOF&gt;"</span>
+        tok<span class="token punctuation">.</span>Type <span class="token operator">=</span> token<span class="token punctuation">.</span>TOKEN_EOF
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token function">isDigit</span><span class="token punctuation">(</span>l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//如果当前字符为数字</span>
+            tok<span class="token punctuation">.</span>Literal <span class="token operator">=</span> l<span class="token punctuation">.</span><span class="token function">readNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            tok<span class="token punctuation">.</span>Type <span class="token operator">=</span> token<span class="token punctuation">.</span>TOKEN_NUMBER
+            tok<span class="token punctuation">.</span>Pos <span class="token operator">=</span> pos
+            <span class="token keyword">return</span> tok
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            tok <span class="token operator">=</span> <span class="token function">newToken</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_ILLEGAL<span class="token punctuation">,</span> l<span class="token punctuation">.</span>ch<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    tok<span class="token punctuation">.</span>Pos <span class="token operator">=</span> pos
+    l<span class="token punctuation">.</span><span class="token function">readNext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> tok
+<span class="token punctuation">}</span></code></pre>
+<p>这个<code>NextToken()</code>函数就是词法分析器（Lexer）的灵魂，语法解析器（Parser）就是通过不断的调用这个<code>NextToken()</code>函数来分析词元（Token），生成相应的抽象语法树（AST）的。所以请初学者认真体会一下这个函数。</p>
+<h3 class="atx" id="测试词法分析器">测试词法分析器</h3>
+<p>下面我们写一个简单的测试程序来测试我们的词法分析器的正确性：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//main.go</span>
+<span class="token keyword">func</span> <span class="token function">TestLexer</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    input <span class="token operator">:=</span> <span class="token string">"2 + (3 * 4) / ( 5 - 3 ) + 10 - a ** 2"</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"Input = %s\n"</span><span class="token punctuation">,</span> input<span class="token punctuation">)</span>
+
+    l <span class="token operator">:=</span> lexer<span class="token punctuation">.</span><span class="token function">NewLexer</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> <span class="token punctuation">{</span>
+        tok <span class="token operator">:=</span> l<span class="token punctuation">.</span><span class="token function">NextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"%s\n"</span><span class="token punctuation">,</span> tok<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> tok<span class="token punctuation">.</span>Type <span class="token operator">==</span> token<span class="token punctuation">.</span>TOKEN_EOF <span class="token punctuation">{</span>
+            <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">TestLexer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>运行后，输出信息如下：</p>
+<pre><code class="fenced-code-block">Input = 2 + (3 * 4) / ( 5 - 3 ) + 10 - a ** 2
+Position:  &lt;1:1&gt; ,     Type: NUMBER ,     Literal: 2
+Position:  &lt;1:3&gt; ,     Type: +      ,     Literal: +
+Position:  &lt;1:5&gt; ,     Type: (      ,     Literal: (
+Position:  &lt;1:6&gt; ,     Type: NUMBER ,     Literal: 3
+Position:  &lt;1:8&gt; ,     Type: *      ,     Literal: *
+Position:  &lt;1:10&gt;,     Type: NUMBER ,     Literal: 4
+Position:  &lt;1:11&gt;,     Type: )      ,     Literal: )
+Position:  &lt;1:13&gt;,     Type: /      ,     Literal: /
+Position:  &lt;1:15&gt;,     Type: (      ,     Literal: (
+Position:  &lt;1:17&gt;,     Type: NUMBER ,     Literal: 5
+Position:  &lt;1:19&gt;,     Type: -      ,     Literal: -
+Position:  &lt;1:21&gt;,     Type: NUMBER ,     Literal: 3
+Position:  &lt;1:23&gt;,     Type: )      ,     Literal: )
+Position:  &lt;1:25&gt;,     Type: +      ,     Literal: +
+Position:  &lt;1:27&gt;,     Type: NUMBER ,     Literal: 10
+Position:  &lt;1:30&gt;,     Type: -      ,     Literal: -
+Position:  &lt;1:32&gt;,     Type: UNKNOWN,     Literal: a
+Position:  &lt;1:34&gt;,     Type: **     ,     Literal: **
+Position:  &lt;1:37&gt;,     Type: NUMBER ,     Literal: 2
+Position:  &lt;1:37&gt;,     Type: EOF    ,     Literal: &lt;EOF&gt;</code></pre>
+<blockquote>
+<p>上面的输出，我做了相应的格式化，以方便读者阅读。</p>
+<p>请注意最后的,它的Position实际上已经没有太大的意义。对于，我们关心的只是词元的类型，而并不关心词元的位置。</p>
+</blockquote>
+<p>恭喜！词法分析器的工作已经完成了。对于初学者，请仔细阅读上面所讲的内容，争取能够完全吸收。</p>
+<h2 class="atx" id="抽象语法树（ast）与语法解析器（parser）">抽象语法树（AST）与语法解析器（Parser）</h2>
+<p>什么是语法？简单来说就类似人类语言，我们说话有主谓宾，而计算机语言也需要自己的语法，比如一个<code>if</code>表达式，使用<code>go</code>语言的话，类似下面这样：</p>
+<pre><code class="fenced-code-block language-go"><span class="token keyword">if</span> a <span class="token operator">==</span> <span class="token number">10</span> <span class="token punctuation">{</span>
+    <span class="token comment">//...</span>
+<span class="token punctuation">}</span></code></pre>
+<p>而对于<code>c</code>语言，则类似下面这样：</p>
+<pre><code class="fenced-code-block language-c"><span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//...</span>
+<span class="token punctuation">}</span></code></pre>
+<p>这个<code>c</code>语言版本的<code>if</code>条件判断，要求后面的判断必须包在括号中，而<code>go</code>语言版本不需要使用括号。这就是两种语言所要求的语法不同所导致的。</p>
+<p>语法解析器（Parser）的作用是将输入（Token）转换为代表语法的数据结构，这个数据结构通常就是我们说的抽象语法树（AST）。下面就来看看如何用代码表示四则运算。</p>
+<h3 class="atx" id="四则运算的表示（抽象语法树）">四则运算的表示（抽象语法树）</h3>
+<p>首先让我们假设，我们需要处理的算术运算如下：</p>
+<pre><code class="fenced-code-block language-go"><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span>
+<span class="token number">1</span> <span class="token operator">-</span> <span class="token number">2</span>
+<span class="token number">1</span> <span class="token operator">*</span> <span class="token number">2</span>
+<span class="token number">1</span> <span class="token operator">/</span> <span class="token number">2</span>
+<span class="token number">5</span> <span class="token operator">%</span> <span class="token number">2</span></code></pre>
+<p>我们怎么用代码表示这个【算术运算】呢？我们可以把这个【算术运算】想象成下面这种：</p>
+<pre><code class="fenced-code-block language-go"><span class="token operator">&lt;</span>Expression<span class="token operator">&gt;</span> operator <span class="token operator">&lt;</span>Expression<span class="token operator">&gt;</span>
+<span class="token comment">//&lt;表达式&gt; 操作符 &lt;表达式&gt;</span></code></pre>
+<p>有的读者就会有疑问：什么是表达式（expression）？简单来说<code>表达式</code>就是能够产生【值】的式子。</p>
+<blockquote>
+<p>语言中还有称为<code>语句</code>（statement）的式子。它和<code>表达式</code>的区别是：语句不产生【值】，表达式产生【值】。例如：</p>
+<pre><code class="fenced-code-block language-go">let sum <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span></code></pre>
+<p>这里的<code>let</code>就是一个语句，而 <code>1 + 2</code>就是表达式。<code>let</code>语句的形式如下：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//let 标识符 = 表达式</span>
+let <span class="token operator">&lt;</span>identifier<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token operator">&lt;</span>expression<span class="token operator">&gt;</span></code></pre>
+<p>这里说的有点偏离现在的主题了，读者只需要简单理解一下即可。之后我们扩展的时候会用到<code>语句</code>。对于现在的四则运算，则只用到<code>表达式</code>。</p>
+</blockquote>
+<p>如何在语言中表示这个<code>表达式（expression）</code>呢？这里就需要提到抽象语法树（AST）了。在抽象语法树中，每个<code>表达式</code>（包括将来扩展要用到的<code>语句</code>）都是一个节点（Node）。那么节点（Node）数据结构中需要什么样的信息呢？</p>
+<ol>
+<li>每个节点的开始和结束位置。</li>
+<li>节点对应的词元（Token）的字面量(Token Literal)。</li>
+<li>节点的字符串表示（调试用）。</li>
+</ol>
+<blockquote>
+<p>既然是抽象语法树（一棵树），就必然会用到节点（Node），这个应该不难理解。</p>
+</blockquote>
+<p>看起来非常简单，对吧。下面是<code>节点（Node）</code>的定义：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//ast.go</span>
+<span class="token keyword">type</span> Node <span class="token keyword">interface</span> <span class="token punctuation">{</span>
+    <span class="token function">Pos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token comment">// 节点的开始位置</span>
+    <span class="token function">End</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token comment">// 节点的结束位置</span>
+
+    <span class="token function">TokenLiteral</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token comment">// 节点对应的词元（Token）字面量(Token Literal)</span>
+    <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token comment">// 节点的字符串表示（调试用）</span>
+<span class="token punctuation">}</span></code></pre>
+<p>这个是<code>节点（Node）</code>的定义。所有的<code>表达式</code>和将来要使用到的<code>语句</code>都必须要实现这个<code>节点（Node）</code>接口。</p>
+<blockquote>
+<p> 我们将要构建的抽象语法树（ AST）就是由彼此相关联的<code>节点（Node）</code>组成的。</p>
+</blockquote>
+<p>那么怎么用代码表示我们的<code>表达式</code>呢？刚才提到了<code>表达式</code>是一个<code>节点</code>。所以<code>表达式</code>的接口如下：</p>
+<pre><code class="fenced-code-block language-go"><span class="token keyword">type</span> Expression <span class="token keyword">interface</span> <span class="token punctuation">{</span>
+    Node <span class="token comment">//`表达式`是一个节点(Node)</span>
+
+    <span class="token comment">//一个空的dummy方法，表示此节点是一个`表达式`节点，用来区别于将来的`语句`节点</span>
+    <span class="token function">expressionNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>有了<code>节点（Node）</code>和<code>表达式（Expression）</code>的说明，让我们再来看看【算术表达式】：</p>
+<pre><code class="fenced-code-block language-go"><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span></code></pre>
+<p>这其实就是一个<code>中缀表达式(Infix Expression)</code>。<code>中缀表达式</code>就是类似如下的表达式：</p>
+<pre><code class="fenced-code-block language-go"><span class="token operator">&lt;</span>expression<span class="token operator">&gt;</span> operator <span class="token operator">&lt;</span>oexpression<span class="token operator">&gt;</span>
+<span class="token comment">//&lt;表达式&gt; 操作符 &lt;表达式&gt;</span></code></pre>
+<p>那么对于<code>1+2</code>这个算术表达式，<code>1</code>就是左表达式，<code>+</code>是操作符，而<code>2</code>是右表达式。</p>
+<p>可以看到<code>中缀表达式</code>需要下面的信息：</p>
+<ol>
+<li>中缀表达式对应的词元(Token)</li>
+<li>操作符(operator)</li>
+<li>操作符左边的表达式和右边的表达式</li>
+</ol>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//ast.go</span>
+<span class="token comment">//中缀表达式</span>
+<span class="token keyword">type</span> InfixExpression <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    Token    token<span class="token punctuation">.</span>Token <span class="token comment">//词元信息</span>
+    Operator <span class="token builtin">string</span>      <span class="token comment">//操作符</span>
+    Right    Expression  <span class="token comment">//右表达式</span>
+    Left     Expression  <span class="token comment">//左表达式</span>
+<span class="token punctuation">}</span></code></pre>
+<p>这个<code>中缀表达式</code>是一个上面我们提到的<code>表达式</code>，因此需要实现<code>表达式</code>接口的所有方法：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//ast.go</span>
+
+<span class="token comment">//开始位置</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>ie <span class="token operator">*</span>InfixExpression<span class="token punctuation">)</span> <span class="token function">Pos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token punctuation">{</span> <span class="token keyword">return</span> ie<span class="token punctuation">.</span>Token<span class="token punctuation">.</span>Pos <span class="token punctuation">}</span>
+<span class="token comment">//结束位置（即右表达式的结束位置）</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>ie <span class="token operator">*</span>InfixExpression<span class="token punctuation">)</span> <span class="token function">End</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token punctuation">{</span> <span class="token keyword">return</span> ie<span class="token punctuation">.</span>Right<span class="token punctuation">.</span><span class="token function">End</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+
+<span class="token comment">//表示此中缀表达式是一个`表达式（expression）`节点，以区别于将来要扩展的`语句（statement）`节点</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>ie <span class="token operator">*</span>InfixExpression<span class="token punctuation">)</span> <span class="token function">expressionNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>      <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">//节点的字面量</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>ie <span class="token operator">*</span>InfixExpression<span class="token punctuation">)</span> <span class="token function">TokenLiteral</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> ie<span class="token punctuation">.</span>Token<span class="token punctuation">.</span>Literal <span class="token punctuation">}</span>
+
+<span class="token comment">//中缀表达式节点的字符串表示</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>ie <span class="token operator">*</span>InfixExpression<span class="token punctuation">)</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> out bytes<span class="token punctuation">.</span>Buffer
+
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span><span class="token string">"("</span><span class="token punctuation">)</span>
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span>ie<span class="token punctuation">.</span>Left<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">//左边表达式的字符串表示</span>
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span><span class="token string">" "</span> <span class="token operator">+</span> ie<span class="token punctuation">.</span>Operator <span class="token operator">+</span> <span class="token string">" "</span><span class="token punctuation">)</span> <span class="token comment">//操作符</span>
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span>ie<span class="token punctuation">.</span>Right<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">//右边表达式的字符串表示</span>
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span><span class="token string">")"</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> out<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>不算很复杂，是吧。那么怎么用代码表示【算术表达式】中的【数字】呢？其实【数字】也是一个<code>表达式</code>，这个表达式非常简单，请看下面的代码：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//ast.go</span>
+
+<span class="token comment">//数字字面量</span>
+<span class="token keyword">type</span> NumberLiteral <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    Token token<span class="token punctuation">.</span>Token <span class="token comment">//词元信息</span>
+    Value <span class="token builtin">float64</span>     <span class="token comment">//数字表示的值，这里只支持float类型（就是说对于整型，内部实际是使用float来存放的）</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//开始位置</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>nl <span class="token operator">*</span>NumberLiteral<span class="token punctuation">)</span> <span class="token function">Pos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token punctuation">{</span> <span class="token keyword">return</span> nl<span class="token punctuation">.</span>Token<span class="token punctuation">.</span>Pos <span class="token punctuation">}</span>
+
+<span class="token comment">//结束位置 = 节点开始位置 + 数字字面量的长度。</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>nl <span class="token operator">*</span>NumberLiteral<span class="token punctuation">)</span> <span class="token function">End</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token punctuation">{</span>
+    pos <span class="token operator">:=</span> nl<span class="token punctuation">.</span>Token<span class="token punctuation">.</span>Pos <span class="token comment">//节点开始位置</span>
+    length <span class="token operator">:=</span> utf8<span class="token punctuation">.</span><span class="token function">RuneCountInString</span><span class="token punctuation">(</span>nl<span class="token punctuation">.</span>Token<span class="token punctuation">.</span>Literal<span class="token punctuation">)</span> <span class="token comment">//数字字面量的长度</span>
+    <span class="token keyword">return</span> token<span class="token punctuation">.</span>Position<span class="token punctuation">{</span>Filename<span class="token punctuation">:</span> pos<span class="token punctuation">.</span>Filename<span class="token punctuation">,</span> Line<span class="token punctuation">:</span> pos<span class="token punctuation">.</span>Line<span class="token punctuation">,</span> Col<span class="token punctuation">:</span> pos<span class="token punctuation">.</span>Col <span class="token operator">+</span> length<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//数字字面量是一个`表达式（expression）`节点</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>nl <span class="token operator">*</span>NumberLiteral<span class="token punctuation">)</span> <span class="token function">expressionNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>      <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>nl <span class="token operator">*</span>NumberLiteral<span class="token punctuation">)</span> <span class="token function">TokenLiteral</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> nl<span class="token punctuation">.</span>Token<span class="token punctuation">.</span>Literal <span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>nl <span class="token operator">*</span>NumberLiteral<span class="token punctuation">)</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span>       <span class="token punctuation">{</span> <span class="token keyword">return</span> nl<span class="token punctuation">.</span>Token<span class="token punctuation">.</span>Literal <span class="token punctuation">}</span></code></pre>
+<p>脚本是由程序（Program）组成的，程序（Program）也是一个<code>节点（Node）</code>。对于这里介绍的简单计算器而言，程序（Program）仅仅包含一个四则运算<code>表达式</code>：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//ast.go</span>
+<span class="token keyword">type</span> Program <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    Expression Expression <span class="token comment">//仅包含一个四则运算表达式，实际上就是上面介绍的`InfixExpression`</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//开始位置</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Program<span class="token punctuation">)</span> <span class="token function">Pos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">.</span>Expression<span class="token punctuation">.</span><span class="token function">Pos</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//结束位置</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Program<span class="token punctuation">)</span> <span class="token function">End</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">.</span>Expression<span class="token punctuation">.</span><span class="token function">End</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//字面量</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Program<span class="token punctuation">)</span> <span class="token function">TokenLiteral</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">.</span>Expression<span class="token punctuation">.</span><span class="token function">TokenLiteral</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//程序（Program）节点的字符串表示</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Program<span class="token punctuation">)</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> out bytes<span class="token punctuation">.</span>Buffer
+
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>Expression<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> out<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>最后，我们的四则运算表达式，还需要支持类似下面的运算：</p>
+<pre><code class="fenced-code-block language-go"><span class="token operator">-</span><span class="token number">2</span>
+<span class="token operator">+</span><span class="token number">2</span></code></pre>
+<p>这里的例子就是<code>前缀表达式（prefix expression）</code>的例子，很好理解。前缀表达式的形式如下：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//-2, +2</span>
+operator <span class="token operator">&lt;</span>expression<span class="token operator">&gt;</span></code></pre>
+<p><code>前缀表达式</code>的抽象语法树（AST）表示和<code>中缀表达式</code>差不多，甚至更简单。因为没有了左表达式，而只包含右表达式：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//ast.go</span>
+<span class="token comment">//前缀表达式</span>
+<span class="token keyword">type</span> PrefixExpression <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    Token    token<span class="token punctuation">.</span>Token <span class="token comment">//词元信息</span>
+    Operator <span class="token builtin">string</span>      <span class="token comment">//操作符</span>
+    Right    Expression  <span class="token comment">//右表达式</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//开始位置</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>pe <span class="token operator">*</span>PrefixExpression<span class="token punctuation">)</span> <span class="token function">Pos</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token punctuation">{</span> <span class="token keyword">return</span> pe<span class="token punctuation">.</span>Token<span class="token punctuation">.</span>Pos <span class="token punctuation">}</span>
+<span class="token comment">//结束位置</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>pe <span class="token operator">*</span>PrefixExpression<span class="token punctuation">)</span> <span class="token function">End</span><span class="token punctuation">(</span><span class="token punctuation">)</span> token<span class="token punctuation">.</span>Position <span class="token punctuation">{</span> <span class="token keyword">return</span> pe<span class="token punctuation">.</span>Right<span class="token punctuation">.</span><span class="token function">End</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span>
+
+<span class="token comment">//前缀表达式是一个表达式（Expression）节点</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>pe <span class="token operator">*</span>PrefixExpression<span class="token punctuation">)</span> <span class="token function">expressionNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>      <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>pe <span class="token operator">*</span>PrefixExpression<span class="token punctuation">)</span> <span class="token function">TokenLiteral</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> pe<span class="token punctuation">.</span>Token<span class="token punctuation">.</span>Literal <span class="token punctuation">}</span>
+
+<span class="token comment">//前缀表达式的字符串表示</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>pe <span class="token operator">*</span>PrefixExpression<span class="token punctuation">)</span> <span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> out bytes<span class="token punctuation">.</span>Buffer
+
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span><span class="token string">"("</span><span class="token punctuation">)</span>
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span>pe<span class="token punctuation">.</span>Operator<span class="token punctuation">)</span>
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span>pe<span class="token punctuation">.</span>Right<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    out<span class="token punctuation">.</span><span class="token function">WriteString</span><span class="token punctuation">(</span><span class="token string">")"</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> out<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>细心的读者会注意到，前述所说的所有的表达式结构都有一个词元（Token）信息字段，这个字段主要是用来解析、调试和报错用的。</p>
+<blockquote>
+<p>这里强调一下，将来所有的节点结构，都包含这个<code>Token</code>字段。</p>
+</blockquote>
+<h3 class="atx" id="四则运算的解析">四则运算的解析</h3>
+<p>对于语法解析器（Parser），实际上有几种软件行业采用的方法（这里说的是主要方法）：</p>
+<ol>
+<li>EBNF（扩展巴克斯范式）</li>
+<li>Pratt解析器（Pratt parser）</li>
+<li>Split &amp; Merge</li>
+</ol>
+<p>上面列出的前两种比较常用，第三种方法不是很常用。有兴趣的读者可以参考相关的文档学习。我们这里使用的是第二种<code>Pratt解析器(Pratt parser)</code>。</p>
+<h3 class="atx" id="pratt解析器（pratt-parser）">Pratt解析器（Pratt parser）</h3>
+<p>在序言部分，我说过我不会讲一些深奥的理论知识。为了不把初学的读者吓退，所以关于Pratt解析的具体内容就不展开来讲了，当然有兴趣可以自己阅读。它的具体内容就是：对于每一个词元类型（Token Type），我们可以有两个函数去处理它<code>infix（中缀）</code>或者<code>prefix（前缀）</code>。选择哪个函数取决于词元（Token）在哪个位置。</p>
+<p>举个例子，对于<code>-（减号）</code>这个操作符，如果用在<code>2-1</code>这种表达式中，它就是个<code>中缀表达式</code>，而如果用在<code>-2</code>这样的表达式中，它就是个<code>前缀表达式</code>。对于这两种位置，我们可以用两种不同的方法来处理它。</p>
+<p>之前讲过，我们的语法解析器（Parser）的输入是词元（Token），它由词法分析器（Lexer）分析脚本后生成。</p>
+<p>语法解析器（Parser）需要什么样的信息呢？</p>
+<ol>
+<li>词法分析器（Lexer），用来获取词法分析器产生词元（Token）</li>
+<li>语法错误的时候，需要尽可能多的捕获错误信息，即错误信息</li>
+<li>当前词元（Token）和下一个词元（Token）</li>
+<li>Pratt解析器需要用到的前缀和中缀函数</li>
+</ol>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//定义Pratt解析器用到的函数</span>
+<span class="token keyword">type</span> <span class="token punctuation">(</span>
+    <span class="token comment">//处理前缀表达式的函数</span>
+    prefixParseFn <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression
+    <span class="token comment">//处理中缀表达式的函数(参数为中缀表达式的左表达式)</span>
+    infixParseFn  <span class="token keyword">func</span><span class="token punctuation">(</span>ast<span class="token punctuation">.</span>Expression<span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression
+<span class="token punctuation">)</span>
+
+<span class="token comment">//解析器</span>
+<span class="token keyword">type</span> Parser <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    l          <span class="token operator">*</span>lexer<span class="token punctuation">.</span>Lexer <span class="token comment">//词法分析器，用来通过其读取词元（Token）信息</span>
+    errors     <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span> <span class="token comment">//存放错误处理信息</span>
+
+    <span class="token comment">//存放错误处理行号（这个主要是用在和网页交互上使用，将来会用到，暂时请忽略）</span>
+    errorLines <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span>
+
+    curToken  token<span class="token punctuation">.</span>Token <span class="token comment">//当前词元</span>
+    peekToken token<span class="token punctuation">.</span>Token <span class="token comment">//当前词元的下一个词元</span>
+
+    <span class="token comment">//前缀表达式map，key是一个词元类型，值是需要处理的前缀表达式函数</span>
+    prefixParseFns <span class="token keyword">map</span><span class="token punctuation">[</span>token<span class="token punctuation">.</span>TokenType<span class="token punctuation">]</span>prefixParseFn
+
+    <span class="token comment">//中缀表达式map，key是一个词元类型，值是需要处理的中缀表达式函数</span>
+    infixParseFns  <span class="token keyword">map</span><span class="token punctuation">[</span>token<span class="token punctuation">.</span>TokenType<span class="token punctuation">]</span>infixParseFn
+<span class="token punctuation">}</span></code></pre>
+<p>这里面比较难理解的是<code>前缀表达式map</code>和<code>中缀表达式map</code>。<span style="color:blue">简单来讲的话，就是对于语法解析过程中遇到的词元类型（Token Type），会调用相对应的函数去解析。</span>如果还是不好理解，那么没关系，我们先把这个暂且放一边，接着看下面的分析，一会你就会慢慢理解这个。</p>
+<p>对于前缀表达式函数和中缀表达式函数，我们给语法解析器（Parser）提供两个简单的函数：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+
+<span class="token comment">//注册前缀表达式函数</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">registerPrefix</span><span class="token punctuation">(</span>tokenType token<span class="token punctuation">.</span>TokenType<span class="token punctuation">,</span> fn prefixParseFn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p<span class="token punctuation">.</span>prefixParseFns<span class="token punctuation">[</span>tokenType<span class="token punctuation">]</span> <span class="token operator">=</span> fn
+<span class="token punctuation">}</span>
+
+<span class="token comment">//注册中缀表达式函数</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">registerInfix</span><span class="token punctuation">(</span>tokenType token<span class="token punctuation">.</span>TokenType<span class="token punctuation">,</span> fn infixParseFn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p<span class="token punctuation">.</span>infixParseFns<span class="token punctuation">[</span>tokenType<span class="token punctuation">]</span> <span class="token operator">=</span> fn
+<span class="token punctuation">}</span></code></pre>
+<p>这两个函数应该很好理解，根据传入的词元类型和回调函数来填充map。</p>
+<p>语法解析器（Parser）要不断的读取词元（Token），根据得到的词元（Token）信息来生成相应的抽象语法树。所以这里需要给语法解析器提供一个获取下一个词元（Token）的函数：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+
+<span class="token comment">//获取下一个词元（Token），将其储存在语法分析器的curToken和peekToken变量中</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">nextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p<span class="token punctuation">.</span>curToken <span class="token operator">=</span> p<span class="token punctuation">.</span>peekToken
+    p<span class="token punctuation">.</span>peekToken <span class="token operator">=</span> p<span class="token punctuation">.</span>l<span class="token punctuation">.</span><span class="token function">NextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>接下来，看一下我们如何初始化语法解析器（Parser）：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+
+<span class="token comment">//解析器的参数为词法分析器（Lexer）</span>
+<span class="token keyword">func</span> <span class="token function">NewParser</span><span class="token punctuation">(</span>l <span class="token operator">*</span>lexer<span class="token punctuation">.</span>Lexer<span class="token punctuation">)</span> <span class="token operator">*</span>Parser <span class="token punctuation">{</span>
+    p <span class="token operator">:=</span> <span class="token operator">&amp;</span>Parser<span class="token punctuation">{</span>
+        l<span class="token punctuation">:</span>          l<span class="token punctuation">,</span>
+        errors<span class="token punctuation">:</span>     <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        errorLines<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    p<span class="token punctuation">.</span><span class="token function">registerAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment">//通过两次调用nextToken,语法分析器的curToken变量中保存的就是输入的第一个词元（Token），</span>
+    <span class="token comment">//peekToken保存的就是第二个词元（Token）。</span>
+    p<span class="token punctuation">.</span><span class="token function">nextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span><span class="token function">nextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> p
+<span class="token punctuation">}</span></code></pre>
+<p>这个初始化里面，我们没有介绍到<code>registerAction()</code>这个函数。在介绍这个函数之前，我还是要再次强调之前说的话：对于<code>前缀表达式map</code>和<code>中缀表达式map</code>，<span style="color:blue">简单来讲的话，就是对于语法解析过程中遇到的词元类型（Token Type），会调用相对应的函数去解析。</span>这个是Pratt解析器（Pratt Parser）的核心功能之一。</p>
+<blockquote>
+<p>Pratt解析器（Pratt Parser）另外一个核心功能是对于优先级的处理，之后会讲到。</p>
+</blockquote>
+<p>如果仔细理解上面的这句话，那么我们的<code>registerAction()</code>函数就是显而易懂的了：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+
+<span class="token comment">//注册前缀表达式方法和中缀表达式函数</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">registerAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//前缀表达式</span>
+    p<span class="token punctuation">.</span>prefixParseFns <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span>token<span class="token punctuation">.</span>TokenType<span class="token punctuation">]</span>prefixParseFn<span class="token punctuation">)</span>
+
+    <span class="token comment">//遇到数字，会调用parseNumber函数来处理</span>
+    p<span class="token punctuation">.</span><span class="token function">registerPrefix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_NUMBER<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parseNumber<span class="token punctuation">)</span>
+
+    <span class="token comment">//遇到类似`+2`这样的表达式中的`+`操作符，调用parsePrefixExpression函数来处理</span>
+    p<span class="token punctuation">.</span><span class="token function">registerPrefix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_PLUS<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parsePrefixExpression<span class="token punctuation">)</span>
+
+    <span class="token comment">//遇到类似`-2`这样的表达式中的`-`操作符，调用parsePrefixExpression函数来处理</span>
+    p<span class="token punctuation">.</span><span class="token function">registerPrefix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_MINUS<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parsePrefixExpression<span class="token punctuation">)</span>
+
+    <span class="token comment">//遇到'('，调用parseGroupedExpression来处理</span>
+    p<span class="token punctuation">.</span><span class="token function">registerPrefix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_LPAREN<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parseGroupedExpression<span class="token punctuation">)</span>
+
+    <span class="token comment">//中缀表达式</span>
+    p<span class="token punctuation">.</span>infixParseFns <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span>token<span class="token punctuation">.</span>TokenType<span class="token punctuation">]</span>infixParseFn<span class="token punctuation">)</span>
+
+    <span class="token comment">//遇到类似`3+2`这样的表达式中的`+`操作符，调用parseInfixExpression函数来处理</span>
+    p<span class="token punctuation">.</span><span class="token function">registerInfix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_PLUS<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parseInfixExpression<span class="token punctuation">)</span>
+
+    p<span class="token punctuation">.</span><span class="token function">registerInfix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_MINUS<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parseInfixExpression<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span><span class="token function">registerInfix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_MULTIPLY<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parseInfixExpression<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span><span class="token function">registerInfix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_DIVIDE<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parseInfixExpression<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span><span class="token function">registerInfix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_MOD<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parseInfixExpression<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span><span class="token function">registerInfix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_POWER<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parseInfixExpression<span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>上面的<code>registerAction()</code>函数，主要就是注册一堆词元类型（Token Type）和与其对应的前缀表达式和中缀表达式回调函数。如何理解呢？举个例子：</p>
+<pre><code class="fenced-code-block language-go"><span class="token operator">-</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token number">3</span> <span class="token operator">*</span> <span class="token number">4</span> <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token number">6</span> <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">)</span></code></pre>
+<p>对于这样的输入，我们看一下<code>registerAction</code>函数所做的工作：</p>
+<pre><code class="fenced-code-block">字面量          词元类型                     注册的回调函数
+---------------------------------------------------------------------
+-       ---&gt;  TOKEN_MINUS           ---&gt;  parsePrefixExpression
+2       ---&gt;  TOKEN_NUMBER          ---&gt;  parseNumber
++       ---&gt;  TOKEN_PLUS            ---&gt;  parseInfixExpression
+3       ---&gt;  TOKEN_NUMBER          ---&gt;  parseNumber
+*       ---&gt;  TOKEN_MULTIPLY        ---&gt;  parseInfixExpression
+4       ---&gt;  TOKEN_NUMBER          ---&gt;  parseInfixExpression
+-       ---&gt;  TOKEN_MINUS           ---&gt;  parseInfixExpression
+(       ---&gt;  TOKEN_LPAREN          ---&gt;  parseGroupedExpression
+6       ---&gt;  TOKEN_NUMBER          ---&gt;  parseInfixExpression
+/       ---&gt;  TOKEN_DIVIDE          ---&gt;  parseInfixExpression
+3       ---&gt;  TOKEN_NUMBER          ---&gt;  parseNumber
+)       ---&gt;  TOKEN_RPAREN          ---&gt;  --
+结束标志  ---&gt;  TOKEN_EOF            ---&gt;   --</code></pre>
+<p>使用更通俗的说法，就是当语法解析器（Parser）遇到相应的词元类型（Token Type），会调用注册过的回调函数来执行相应的动作。</p>
+<p>使用一幅图，可能更形象一些：</p>
+<p><img alt="expr_func_map" src="expr_func_map.png"></p>
+<p>下面让我们来一步一步实现语法解析的相关代码。</p>
+<h4 class="atx" id="解析程序（parse-program）">解析程序（Parse Program）</h4>
+<p>脚本是由程序（Program）组成的，我们先看一下之前定义的的<code>Program</code>抽象语法树表示：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//ast.go</span>
+<span class="token keyword">type</span> Program <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    Expression Expression <span class="token comment">//仅包含一个四则运算表达式</span>
+<span class="token punctuation">}</span></code></pre>
+<p>解析Program节点的代码也比较简单：</p>
+<pre><code class="fenced-code-block language-go"><span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">ParseProgram</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span>ast<span class="token punctuation">.</span>Program <span class="token punctuation">{</span>
+    program <span class="token operator">:=</span> <span class="token operator">&amp;</span>ast<span class="token punctuation">.</span>Program<span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//生成一个Program节点</span>
+
+    program<span class="token punctuation">.</span>Expression <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">parseExpression</span><span class="token punctuation">(</span>LOWEST<span class="token punctuation">)</span> <span class="token comment">//解析表达式</span>
+    <span class="token keyword">return</span> program
+<span class="token punctuation">}</span></code></pre>
+<p>这里需要注意的是第四行的<code>parseExpression（暂时还没有讲到）</code>函数的参数<code>LOWEST</code>，这个就涉及到Pratt解析器的第二个核心功能【优先级】。</p>
+<p>我们小时候学数学的时候，老师告诉我们乘除法的优先级高于加减法。那么Pratt解析器如何去处理这个概念的呢？</p>
+<p>和之前的<code>registerAction()</code>函数类似，在这个<code>registerAction()</code>函数里，每个词元类型（Token Type）对应一个回调函数。同样，Pratt解析器为了处理优先级这个概念，它规定对于每个词元类型（Token Type）（当然这里主要是指前缀和中缀操作符），也可以有一个相应的优先级。</p>
+<p>我们使用代码具体来说：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+<span class="token keyword">const</span> <span class="token punctuation">(</span>
+    <span class="token boolean">_</span> <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token boolean">iota</span>
+    LOWEST <span class="token comment">//值为1</span>
+
+    SUM     <span class="token comment">//+, -</span>
+    PRODUCT <span class="token comment">//*, /, %, **</span>
+    PREFIX  <span class="token comment">//-X, +X</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> precedences <span class="token operator">=</span> <span class="token keyword">map</span><span class="token punctuation">[</span>token<span class="token punctuation">.</span>TokenType<span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span>
+    token<span class="token punctuation">.</span>TOKEN_PLUS<span class="token punctuation">:</span>     SUM<span class="token punctuation">,</span>
+    token<span class="token punctuation">.</span>TOKEN_MINUS<span class="token punctuation">:</span>    SUM<span class="token punctuation">,</span>
+    token<span class="token punctuation">.</span>TOKEN_MULTIPLY<span class="token punctuation">:</span> PRODUCT<span class="token punctuation">,</span>
+    token<span class="token punctuation">.</span>TOKEN_DIVIDE<span class="token punctuation">:</span>   PRODUCT<span class="token punctuation">,</span>
+    token<span class="token punctuation">.</span>TOKEN_MOD<span class="token punctuation">:</span>      PRODUCT<span class="token punctuation">,</span>
+    token<span class="token punctuation">.</span>TOKEN_POWER<span class="token punctuation">:</span>    PRODUCT<span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code></pre>
+<p>从上面的代码中我们可以看到，我们给<code>+(TOKEN_PLUS)</code>和<code>-(TOKEN_MINUS)</code>定义的优先级为<code>SUM(值为2)</code>，给</p>
+<p><code>*(TOKEN_MULTIPLY)</code>、<code>/(TOKEN_DIVIDE)</code>、<code>%(TOKEN_MOD)</code>和<code>**(TOKEN_POWER)</code>定义的优先级为<code>PRODUCT(值为3)</code>。简单来讲，就是我们给乘除法、取模、乘方定义的优先级比加减法高。而前缀<code>+</code>和前缀<code>-</code>的优先级为<code>PREFIX(值为4)</code>，就是最高的优先级。</p>
+<p>细心的读者可能会觉得奇怪，<code>precedences</code>变量中为啥没有<code>-X或者+X</code>对应的优先级<code>PREFIX</code>。这是因为我们会在<code>parsePrefixExpression</code>方法里使用这个优先级，稍后读者会看到。</p>
+<h4 class="atx" id="解析表达式（expression）">解析表达式（expression）</h4>
+<p>在<code>parseProgram</code>方法中，调用了<code>parseExpression</code>函数，这个函数就是语法解析器（Parser）中最核心的函数。它不仅处理优先级，还同时处理之前介绍的回调函数。请看下面的代码：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+<span class="token comment">//处理表达式：传入的是当前词元的【优先级】</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">parseExpression</span><span class="token punctuation">(</span>precedence <span class="token builtin">int</span><span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression <span class="token punctuation">{</span>
+    <span class="token comment">//对当前的词元类型，调用【前缀回调函数】</span>
+    prefix <span class="token operator">:=</span> p<span class="token punctuation">.</span>prefixParseFns<span class="token punctuation">[</span>p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Type<span class="token punctuation">]</span>
+    <span class="token keyword">if</span> prefix <span class="token operator">==</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span> <span class="token comment">//如果没有找到，则报错</span>
+        p<span class="token punctuation">.</span><span class="token function">noPrefixParseFnError</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Type<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+    <span class="token punctuation">}</span>
+    leftExp <span class="token operator">:=</span> <span class="token function">prefix</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//调用前缀回调函数</span>
+
+    <span class="token comment">// 调用中缀回调函数，直到下一个词元（Token）有更高的优先级，就退出循环</span>
+    <span class="token keyword">for</span> precedence <span class="token operator">&lt;</span> p<span class="token punctuation">.</span><span class="token function">peekPrecedence</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        infix <span class="token operator">:=</span> p<span class="token punctuation">.</span>infixParseFns<span class="token punctuation">[</span>p<span class="token punctuation">.</span>peekToken<span class="token punctuation">.</span>Type<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> infix <span class="token operator">==</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> leftExp
+        <span class="token punctuation">}</span>
+        p<span class="token punctuation">.</span><span class="token function">nextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        leftExp <span class="token operator">=</span> <span class="token function">infix</span><span class="token punctuation">(</span>leftExp<span class="token punctuation">)</span> <span class="token comment">//调用中缀回调函数，将前缀回调函数的返回值作为参数传递给中缀表达式</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> leftExp
+<span class="token punctuation">}</span></code></pre>
+<p>从代码中可以看到，<code>parseExpression</code>首先会调用之前注册的前缀表达式的回调函数，如果没有找到，就会报错。如果找到了，接着就会循环处理中缀表达式的回调函数，直到遇到下一个词元（Token）有更高的优先级，就退出循环。</p>
+<p>关于这个优先级的描述，由于这里面涉及到函数的递归调用，所以比较晦涩难懂。这就是使用Pratt解析器的好处，我们只需要按照Pratt解析器方法来实现就可以了（这就是【站在巨人的肩膀上】）。</p>
+<blockquote>
+<p>当然，如果读者对Pratt解析的细节感兴趣的话，可以在百度、必应、谷歌里面搜索【Pratt Parsing】。</p>
+</blockquote>
+<p>对于这个<code>parseExpression</code>函数，如果还是感觉不太理解的话， 你只需要知道它就是<code>Pratt Parsing</code>的处理逻辑。读者之后会发现，我们后续的章节加入了很多更高级的语言特性，这个函数也从未有任何改变。它老老实实的待在那里，默默无闻的做着最核心的事情（调用前缀回调函数，调用中缀回调函数，处理优先级），从来不抱怨😄。</p>
+<p>假设我们的四则运算表达式如下：</p>
+<pre><code class="fenced-code-block language-go"><span class="token number">5</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token number">3</span></code></pre>
+<p>对于这个输入，调用<code>parseExpression</code>函数后，生成的抽象语法树（AST）如下：</p>
+<p>AST<img alt="AST" src="AST.png"></p>
+<p><code>parseExpression</code>函数里调用了一个<code>peekPrecedence</code>函数，顾名思义就是取得下一个词元（Token）的优先级：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">peekPrecedence</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">int</span> <span class="token punctuation">{</span>
+    <span class="token comment">//从变量为precedences的map中取出下一个词元(Token)对应的优先级</span>
+    <span class="token keyword">if</span> p<span class="token punctuation">,</span> ok <span class="token operator">:=</span> precedences<span class="token punctuation">[</span>p<span class="token punctuation">.</span>peekToken<span class="token punctuation">.</span>Type<span class="token punctuation">]</span><span class="token punctuation">;</span> ok <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> p
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> LOWEST
+<span class="token punctuation">}</span></code></pre>
+<p>同样的，我们还需要一个获取当前词元（Token）优先级的函数：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">curPrecedence</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">int</span> <span class="token punctuation">{</span>
+    <span class="token comment">//从变量为precedences的map中取出当前词元(Token)对应的优先级</span>
+    <span class="token keyword">if</span> p<span class="token punctuation">,</span> ok <span class="token operator">:=</span> precedences<span class="token punctuation">[</span>p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Type<span class="token punctuation">]</span><span class="token punctuation">;</span> ok <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> p
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> LOWEST
+<span class="token punctuation">}</span></code></pre>
+<p><code>parseExpression</code>函数里调用了一个<code>noPrefixParseFnError</code>函数，我们还没有涉及到。当语法解析器（Parser）找不到当前词元对应的前缀函数的时候，会调用这个<code>noPrefixParseFnError</code>函数报告语法错误：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+<span class="token comment">//没有找到当前词元（Token）对应的前缀函数的时候，会报告语法错误</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">noPrefixParseFnError</span><span class="token punctuation">(</span>t token<span class="token punctuation">.</span>TokenType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> t <span class="token operator">!=</span> token<span class="token punctuation">.</span>TOKEN_EOF <span class="token punctuation">{</span>
+        msg <span class="token operator">:=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"Syntax Error:%v - no prefix parse functions for '%s' found"</span><span class="token punctuation">,</span> 
+                           p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">,</span> t<span class="token punctuation">)</span>
+
+        <span class="token comment">//将语法错误信息加入到errors数组</span>
+        p<span class="token punctuation">.</span>errors <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errors<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+        <span class="token comment">//将语法错误的当前行号加入到errorLines数组</span>
+        p<span class="token punctuation">.</span>errorLines <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errorLines<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">.</span><span class="token function">Sline</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>我们还需要给语法解析器（Parser）提供一些常用的函数：</p>
+<ol>
+<li>当我们期待下一个词元（Token）必须是某个类型的<code>expectPeek()</code>函数。</li>
+<li>判断当前词元（Token）的类型是否为某个期望的类型的<code>curTokenIs()</code>函数。</li>
+<li>判断下一个词元（Token）的类型是否为某个期望的类型的<code>peekTokenIs()</code>函数。</li>
+<li>当下一个词元（Token）的类型不是期望的类型的时候的报错函数<code>peekError()</code>。</li>
+<li>获取语法错误信息的函数<code>Errors()</code>。</li>
+<li>获取语法错误行号的函数<code>ErrorLines()</code>。</li>
+</ol>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+
+<span class="token comment">//判断当前词元（Token）类型是否为指定的词元（Token）类型</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">curTokenIs</span><span class="token punctuation">(</span>t token<span class="token punctuation">.</span>TokenType<span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Type <span class="token operator">==</span> t
+<span class="token punctuation">}</span>
+
+<span class="token comment">//判断下一个词元（Token）类型是否为指定的词元（Token）类型</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">peekTokenIs</span><span class="token punctuation">(</span>t token<span class="token punctuation">.</span>TokenType<span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">.</span>peekToken<span class="token punctuation">.</span>Type <span class="token operator">==</span> t
+<span class="token punctuation">}</span>
+
+<span class="token comment">//期待下一个词元（Token）类型必须为某个类型。如果是，就读取下一个词元并返回true。</span>
+<span class="token comment">//否则，报告语法错误并返回false。</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">expectPeek</span><span class="token punctuation">(</span>t token<span class="token punctuation">.</span>TokenType<span class="token punctuation">)</span> <span class="token builtin">bool</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> p<span class="token punctuation">.</span><span class="token function">peekTokenIs</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        p<span class="token punctuation">.</span><span class="token function">nextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">peekError</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">peekError</span><span class="token punctuation">(</span>t token<span class="token punctuation">.</span>TokenType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    newPos <span class="token operator">:=</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos
+    <span class="token comment">//注：这里不要使用'len(p.curToken.Literal)'。因为标识符中可以包含中文等多字节字符。</span>
+    newPos<span class="token punctuation">.</span>Col <span class="token operator">=</span> newPos<span class="token punctuation">.</span>Col <span class="token operator">+</span> utf8<span class="token punctuation">.</span><span class="token function">RuneCountInString</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Literal<span class="token punctuation">)</span>
+    msg <span class="token operator">:=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"Syntax Error:%v- expected next token to be %s, got %s instead"</span><span class="token punctuation">,</span>
+                       newPos<span class="token punctuation">,</span> t<span class="token punctuation">,</span> p<span class="token punctuation">.</span>peekToken<span class="token punctuation">.</span>Type<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errors <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errors<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errorLines <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errorLines<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">.</span><span class="token function">Sline</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//获取语法错误信息</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">Errors</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">.</span>errors
+<span class="token punctuation">}</span>
+
+<span class="token comment">//获取语法错误行号</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">ErrorLines</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">.</span>errorLines
+<span class="token punctuation">}</span></code></pre>
+<p>上面的几个语法解析器（Parser）函数理解起来应该都比较简单。需要注意的就是<code>peekError</code>函数，我们汇报错误的时候，行号应该是报告当前词元（Token）的位置，而不是下一个词元（peek Token）的位置。如果我们将其更改为如下的代码（不正确的版本）：</p>
+<pre><code class="fenced-code-block language-go"><span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">peekError</span><span class="token punctuation">(</span>t token<span class="token punctuation">.</span>TokenType<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    newPos <span class="token operator">:=</span> p<span class="token punctuation">.</span>peekToken<span class="token punctuation">.</span>Pos
+    newPos<span class="token punctuation">.</span>Col <span class="token operator">=</span> newPos<span class="token punctuation">.</span>Col <span class="token operator">+</span> <span class="token function">len</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>peekToken<span class="token punctuation">.</span>Literal<span class="token punctuation">)</span> <span class="token comment">//当前词元的位置+当前词元的长度</span>
+    msg <span class="token operator">:=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"Syntax Error:%v- expected next token to be %s, got %s instead"</span><span class="token punctuation">,</span>
+                       newPos<span class="token punctuation">,</span> t<span class="token punctuation">,</span> p<span class="token punctuation">.</span>peekToken<span class="token punctuation">.</span>Type<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errors <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errors<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errorLines <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errorLines<span class="token punctuation">,</span> p<span class="token punctuation">.</span>peekToken<span class="token punctuation">.</span>Pos<span class="token punctuation">.</span><span class="token function">Sline</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>报告的错误行号，反而会让人感到困惑。这是为什么呢？来看一个例子，假设我们有如下的脚本代码（这里的代码是将来会实现的脚本代码，用在这里只是为了说明问题）：</p>
+<pre><code class="fenced-code-block language-perl">println<span class="token punctuation">(</span><span class="token string">"hello world!"</span>
+
+println<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<p>注意：第1行，我故意少写了一个<code>)</code>。如果<code>peekError</code>函数使用的是不正确的版本，那么会报告如下错误：</p>
+<pre><code class="fenced-code-block">Syntax Error: &lt;examples/xxx.mp:3:1&gt; - expected next token to be ), got IDENTIFIER instead</code></pre>
+<p>可以看到，它报告的是下一个词元（peek Token）即第3行的<code>println</code>所在的位置（因为第2行是个空行）。这会让人感到非常困惑。</p>
+<p>如果<code>peekError</code>函数使用的是正确的版本，那么报告如下错误：</p>
+<pre><code class="fenced-code-block">Syntax Error: &lt;examples/xxx.mp:1:21&gt; - expected next token to be ), got IDENTIFIER instead</code></pre>
+<p>可以看到，语法解析器正确的汇报出了错误的行号。我们希望获取的是<code>当前词元的位置+当前词元的长度</code>这个错误位置，而不是下一个词元的位置（因为如果有多个空行或者多个注释行的情况下，下一个词元的行号可能离现在词元的行号位置相差很远了）。</p>
+<p>现在我们的语法解析器（Parser）还剩下<code>registerAction()</code>函数里的回调函数没有实现，分别是：</p>
+<ol>
+<li>解析数字的函数<code>parserNumber</code>。</li>
+<li>解析括号的函数<code>parseGroupedExpression</code>。</li>
+<li>解析中缀表达式的函数<code>parseInfixExpression</code>。</li>
+<li>解析前缀表达式的函数<code>parsePrefixExpression</code>。</li>
+</ol>
+<p>下面我们来逐步实现这几个函数：</p>
+<p>首先是<code>parseNumber</code>函数，用来解析数字：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+
+<span class="token comment">//解析数字</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">parseNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression <span class="token punctuation">{</span>
+    lit <span class="token operator">:=</span> <span class="token operator">&amp;</span>ast<span class="token punctuation">.</span>NumberLiteral<span class="token punctuation">{</span>Token<span class="token punctuation">:</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">}</span> <span class="token comment">//生成NumberLiteral节点</span>
+
+    <span class="token comment">//取出当前词元包含的字面量值，并将其转换为浮点数（float64）。</span>
+    value<span class="token punctuation">,</span> err <span class="token operator">:=</span> strconv<span class="token punctuation">.</span><span class="token function">ParseFloat</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Literal<span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span> <span class="token comment">//如果无法解析，则报错</span>
+        msg <span class="token operator">:=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"Syntax Error:%v - could not parse %q as float"</span><span class="token punctuation">,</span> 
+                           p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Literal<span class="token punctuation">)</span>
+        p<span class="token punctuation">.</span>errors <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errors<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+        p<span class="token punctuation">.</span>errorLines <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errorLines<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">.</span><span class="token function">Sline</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+    <span class="token punctuation">}</span>
+
+    lit<span class="token punctuation">.</span>Value <span class="token operator">=</span> value
+    <span class="token keyword">return</span> lit
+<span class="token punctuation">}</span></code></pre>
+<p>这个<code>parseNumber</code>函数返回的是<code>NumberLiteral</code>这个抽象语法树结构。</p>
+<p>接下来是解析括号的函数<code>parseGroupedExpression</code>：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+
+<span class="token comment">//解析括号</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">parseGroupedExpression</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression <span class="token punctuation">{</span>
+    p<span class="token punctuation">.</span><span class="token function">nextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    exp <span class="token operator">:=</span> p<span class="token punctuation">.</span><span class="token function">parseExpression</span><span class="token punctuation">(</span>LOWEST<span class="token punctuation">)</span>
+
+    <span class="token comment">//解析完成后，判断下一个词元类型是否为右括号。如果不是的话，报错</span>
+    <span class="token keyword">if</span> <span class="token operator">!</span>p<span class="token punctuation">.</span><span class="token function">expectPeek</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_RPAREN<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> exp
+<span class="token punctuation">}</span></code></pre>
+<p>再接下来是解析中缀表达式的函数<code>parseInfixExpression</code>：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+
+<span class="token comment">// 解析中缀表达式: &lt;left-expression&gt; operator &lt;right-expression&gt;</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">parseInfixExpression</span><span class="token punctuation">(</span>left ast<span class="token punctuation">.</span>Expression<span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression <span class="token punctuation">{</span>
+    <span class="token comment">//生成中缀表达式节点</span>
+    expression <span class="token operator">:=</span> <span class="token operator">&amp;</span>ast<span class="token punctuation">.</span>InfixExpression<span class="token punctuation">{</span>
+        Token<span class="token punctuation">:</span>    p<span class="token punctuation">.</span>curToken<span class="token punctuation">,</span>
+        Operator<span class="token punctuation">:</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Literal<span class="token punctuation">,</span> <span class="token comment">//当前节点的操作符</span>
+        Left<span class="token punctuation">:</span>     left<span class="token punctuation">,</span> <span class="token comment">//左表达式</span>
+    <span class="token punctuation">}</span>
+    precedence <span class="token operator">:=</span> p<span class="token punctuation">.</span><span class="token function">curPrecedence</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// 如果当前的词元类型是'**', 我们希望它是右结合的。例如： 3 ** 2 ** 3 = 3 ** (2 ** 3)</span>
+    <span class="token comment">// 这里的做法非常简单，只需要将其优先级减去【1】即可。</span>
+    <span class="token comment">// 当然如果希望'**'是左结合的，那么下面的判断是不需要的。</span>
+    <span class="token keyword">if</span> p<span class="token punctuation">.</span><span class="token function">curTokenIs</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_POWER<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        precedence<span class="token operator">--</span>
+    <span class="token punctuation">}</span>
+
+    p<span class="token punctuation">.</span><span class="token function">nextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    expression<span class="token punctuation">.</span>Right <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">parseExpression</span><span class="token punctuation">(</span>precedence<span class="token punctuation">)</span> <span class="token comment">//处理右表达式</span>
+
+    <span class="token keyword">return</span> expression
+<span class="token punctuation">}</span></code></pre>
+<p>这里唯一需要注意的就是词元类型为<code>**</code>的时候的处理。我已经在代码的注释中写的比较清楚了，理解起来也应该不算困难。</p>
+<p>最后是处理前缀表达式的函数<code>parsePrefixExpression</code>：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+
+<span class="token comment">// 解析前缀表达式: &lt;prefix-operator&gt;&lt;right-expression&gt;</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">parsePrefixExpression</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression <span class="token punctuation">{</span>
+    expression <span class="token operator">:=</span> <span class="token operator">&amp;</span>ast<span class="token punctuation">.</span>PrefixExpression<span class="token punctuation">{</span>Token<span class="token punctuation">:</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">,</span> Operator<span class="token punctuation">:</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Literal<span class="token punctuation">}</span>
+    p<span class="token punctuation">.</span><span class="token function">nextToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment">//注意：这里给parseExpression函数传入的是'PREFIX'的优先级，这个的优先级是最高的。所以诸如:</span>
+    <span class="token comment">//   2 + -2，  2 - -2</span>
+    <span class="token comment">//  都是合法的表达式。</span>
+    <span class="token comment">// 它们会被处理成：</span>
+    <span class="token comment">//   2 + (-2)， 2 - (-2)</span>
+    expression<span class="token punctuation">.</span>Right <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">parseExpression</span><span class="token punctuation">(</span>PREFIX<span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> expression
+<span class="token punctuation">}</span></code></pre>
+<p>还有一点不能忘记了，当遇到不合法的词元类型（<code>TOKEN_ILLEGAL</code>）的时候，我们也需要处理这种情况，因为这个所谓的<code>Illegal</code>词元类型可能会出现在程序的任何位置，所以我们必须为其注册前缀和中缀表达式回调函数：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">registerAction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p<span class="token punctuation">.</span>prefixParseFns <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span>token<span class="token punctuation">.</span>TokenType<span class="token punctuation">]</span>prefixParseFn<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span><span class="token function">registerPrefix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_ILLEGAL<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parsePrefixIllegalExpression<span class="token punctuation">)</span>
+    <span class="token comment">//...</span>
+
+    p<span class="token punctuation">.</span>infixParseFns <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span>token<span class="token punctuation">.</span>TokenType<span class="token punctuation">]</span>infixParseFn<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span><span class="token function">registerPrefix</span><span class="token punctuation">(</span>token<span class="token punctuation">.</span>TOKEN_ILLEGAL<span class="token punctuation">,</span> p<span class="token punctuation">.</span>parseInfixIllegalExpression<span class="token punctuation">)</span>
+    <span class="token comment">//...</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">parsePrefixIllegalExpression</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression <span class="token punctuation">{</span>
+    msg <span class="token operator">:=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"Syntax Error:%v - Illegal token found. Literal: '%s'"</span><span class="token punctuation">,</span> 
+                        p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Literal<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errors <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errors<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errorLines <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errorLines<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">.</span><span class="token function">Sline</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">parseInfixIllegalExpression</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression <span class="token punctuation">{</span>
+    msg <span class="token operator">:=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"Syntax Error:%v - Illegal token found. Literal: '%s'"</span><span class="token punctuation">,</span> 
+                        p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Literal<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errors <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errors<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errorLines <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errorLines<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">.</span><span class="token function">Sline</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span></code></pre>
+<p><code>parsePrefixIllegalExpression()</code>函数和<code>parseInfixIllegalExpression</code>函数的内容是一样的，都是简单的报告一个语法错误。当然如果你觉得代码重复了的话，你可以使其中一个函数来调用另一个函数，像下面这样：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//parser.go</span>
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">parsePrefixIllegalExpression</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression <span class="token punctuation">{</span>
+    msg <span class="token operator">:=</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"Syntax Error:%v - Illegal token found. Literal: '%s'"</span><span class="token punctuation">,</span> 
+                       p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Literal<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errors <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errors<span class="token punctuation">,</span> msg<span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>errorLines <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>errorLines<span class="token punctuation">,</span> p<span class="token punctuation">.</span>curToken<span class="token punctuation">.</span>Pos<span class="token punctuation">.</span><span class="token function">Sline</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>p <span class="token operator">*</span>Parser<span class="token punctuation">)</span> <span class="token function">parseInfixIllegalExpression</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ast<span class="token punctuation">.</span>Expression <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">parsePrefixIllegalExpression</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>恭喜恭喜！我们的语法解析器（Parser）终于大功告成了。</p>
+<h3 class="atx" id="测试语法解析器">测试语法解析器</h3>
+<p>现在我们写一个简单的测试程序，来验证一下我们的语法解析器（Parser）：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//main.go</span>
+<span class="token keyword">func</span> <span class="token function">TestParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    input <span class="token operator">:=</span> <span class="token string">" 1 + 2 * (5 - 3) * 3"</span>          <span class="token comment">//输入</span>
+    expected <span class="token operator">:=</span> <span class="token string">"(1 + ((2 * (5 - 3)) * 3))"</span>  <span class="token comment">//期待值</span>
+    l <span class="token operator">:=</span> lexer<span class="token punctuation">.</span><span class="token function">NewLexer</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span>
+    p <span class="token operator">:=</span> parser<span class="token punctuation">.</span><span class="token function">NewParser</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span>
+    program <span class="token operator">:=</span> p<span class="token punctuation">.</span><span class="token function">ParseProgram</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span><span class="token function">Errors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">{</span> <span class="token comment">//如果语法有错误，则报告错误</span>
+        <span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token keyword">range</span> p<span class="token punctuation">.</span><span class="token function">Errors</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        os<span class="token punctuation">.</span><span class="token function">Exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> program<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> expected <span class="token punctuation">{</span>
+        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"Syntax error: expected %s, got %s\n"</span><span class="token punctuation">,</span> expected<span class="token punctuation">,</span> program<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        os<span class="token punctuation">.</span><span class="token function">Exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"input  = %s\n"</span><span class="token punctuation">,</span> input<span class="token punctuation">)</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"output = %s\n"</span><span class="token punctuation">,</span> program<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">TestParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>有的读者可能会有个疑问，对于带有括号的算术表达式，我们好像并没有处理括号的优先级，实际上这个括号的优先级是在<code>parseGroupedExpression</code>函数中处理的。但是我们在<code>parseGroupedExpression</code>函数里并没有看到处理任何有关优先级的代码啊，这是怎么回事？这就是<code>Pratt解析器</code>的神奇之处。是的，就是这么神奇！上面的例子能够正常运行，且返回正确的结果。</p>
+<p>读者可以多写一些测试用例，来深入理解一下语法解析器（Parser）是如何工作的。</p>
+<h2 class="atx" id="解释器（evaluator）">解释器（Evaluator）</h2>
+<p>通过上面的学习，读者应该了解了语法解析器（Parser）的实现步骤。现在到了最激动人心的时刻了。请大家稍安勿躁，容我慢慢讲来。</p>
+<p>我们的解释器（Evaluator）的输入是抽象语法树（AST），解释器（Evaluator）通过解释抽象语法树（AST）来实现相应的脚本动作。</p>
+<p>在实现之前，我们先想一想，我们需要定义什么信息，来表示解释器（Evaluator）的返回值呢？这就引出了我们将要讲的对象（Object）。</p>
+<blockquote>
+<p>有的书籍或者文档中，使用Value这个概念，和我们这里讲的Object差不多是一个概念，只不过使用的是不同的术语罢了。</p>
+</blockquote>
+<h3 class="atx" id="对象表示-（representing-objects-）">对象表示 （Representing Objects ）</h3>
+<p>对于我们的简单计算器，当解释器（Evaluator）解释抽象语法树（AST）的时候，我们需要一个对象结构，来表示抽象语法树的计算结果（或者说中间结果）。举个例子：</p>
+<pre><code class="fenced-code-block language-go"><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">3</span></code></pre>
+<p>当语法解析器遇到这样的表达式之后，它生成的抽象语法树如下图所示：</p>
+<p><img alt="ast2" src="AST2.png"></p>
+<p>解释器（Evaluator）遇到上面的抽象语法树（AST）后，它需要将<code>1+2</code>的结果【3】先保存起来，然后再和<code>3</code>相加。</p>
+<p>那么解释器（Evaluator）如何保存<code>1+2</code>的结果呢？这就需要用到解释器（Evaluator）的对象系统（Object system）了。</p>
+<p>那么这个对象（Object）需要什么样的信息呢？</p>
+<ol>
+<li>对象的类型（Object Type）</li>
+<li>对象的字符串表示（输出或者调试用）</li>
+</ol>
+<p>下面来看看对象（Object）的代码表示：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//object.go</span>
+
+<span class="token comment">//对象类型，这里为了便于理解，使用的是字符串类型，实际上还可以是整形。</span>
+<span class="token keyword">type</span> ObjectType <span class="token builtin">string</span>
+
+<span class="token comment">//对象接口</span>
+<span class="token keyword">type</span> Object <span class="token keyword">interface</span> <span class="token punctuation">{</span>
+    <span class="token function">Type</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ObjectType  <span class="token comment">// 对象的类型</span>
+    <span class="token function">Inspect</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span>   <span class="token comment">// 对象的字符串表示（输出或者调试用）</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对于简单的计算器，我们如何表示我们的<code>数字对象（Number Object）</code>呢？其实对于 数字对象（Number Object），它唯一需要保存的就是数字，这个其实很好理解，下面是<code>数字对象（Number Object）</code>的代码表示：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//object.go</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">(</span>
+    NUMBER_OBJ <span class="token operator">=</span> <span class="token string">"NUMBER"</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">// 数字对象（实现了Object接口）</span>
+<span class="token keyword">type</span> Number <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    Value <span class="token builtin">float64</span> <span class="token comment">//数字对象存储的数字值</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>n <span class="token operator">*</span>Number<span class="token punctuation">)</span> <span class="token function">Inspect</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> fmt<span class="token punctuation">.</span><span class="token function">Sprintf</span><span class="token punctuation">(</span><span class="token string">"%g"</span><span class="token punctuation">,</span> n<span class="token punctuation">.</span>Value<span class="token punctuation">)</span> <span class="token comment">//将对象中存储的数字，转换为字符串返回</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token punctuation">(</span>n <span class="token operator">*</span>Number<span class="token punctuation">)</span> <span class="token function">Type</span><span class="token punctuation">(</span><span class="token punctuation">)</span> ObjectType <span class="token punctuation">{</span> <span class="token keyword">return</span> NUMBER_OBJ <span class="token punctuation">}</span>
+
+<span class="token comment">// 这里提供一个工具函数（utility function）</span>
+<span class="token comment">// 根据传入的浮点型参数，生成一个新的数字对象。</span>
+<span class="token keyword">func</span> <span class="token function">NewNumber</span><span class="token punctuation">(</span>f <span class="token builtin">float64</span><span class="token punctuation">)</span> <span class="token operator">*</span>Number <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">&amp;</span>Number<span class="token punctuation">{</span>Value<span class="token punctuation">:</span> f<span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>是不是觉得不可思议，简单到难以置信！</p>
+<blockquote>
+<p> 不要把这里的对象（Object）和面向对象系统中的对象搞混了，它们完全不是一个概念。</p>
+</blockquote>
+<h3 class="atx" id="解释抽象语法树（ast）">解释抽象语法树（AST）</h3>
+<p>有了这个对象（Object）系统后，接下来让我们看一下解释器（Evaluator）如何解释抽象语法树（AST）：</p>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//eval.go</span>
+
+<span class="token comment">//解释AST</span>
+<span class="token keyword">func</span> <span class="token function">Eval</span><span class="token punctuation">(</span>node ast<span class="token punctuation">.</span>Node<span class="token punctuation">)</span> Object <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> node <span class="token operator">:=</span> node<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token keyword">type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token operator">*</span>ast<span class="token punctuation">.</span>Program<span class="token punctuation">:</span> <span class="token comment">//遇到程序节点</span>
+        <span class="token keyword">return</span> <span class="token function">evalProgram</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token operator">*</span>ast<span class="token punctuation">.</span>NumberLiteral<span class="token punctuation">:</span> <span class="token comment">//遇到数字节点</span>
+        <span class="token keyword">return</span> <span class="token function">evalNumber</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token operator">*</span>ast<span class="token punctuation">.</span>PrefixExpression<span class="token punctuation">:</span> <span class="token comment">//遇到前缀表达式节点</span>
+        right <span class="token operator">:=</span> <span class="token function">Eval</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>Right<span class="token punctuation">)</span> <span class="token comment">//解释右表达式</span>
+        <span class="token keyword">return</span> <span class="token function">evalPrefixExpression</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> right<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token operator">*</span>ast<span class="token punctuation">.</span>InfixExpression<span class="token punctuation">:</span> <span class="token comment">//遇到中缀表达式节点</span>
+        left <span class="token operator">:=</span> <span class="token function">Eval</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>Left<span class="token punctuation">)</span> <span class="token comment">//解释左表达式</span>
+        right <span class="token operator">:=</span> <span class="token function">Eval</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>Right<span class="token punctuation">)</span> <span class="token comment">//解释右表达式</span>
+        <span class="token keyword">return</span> <span class="token function">evalInfixExpression</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> left<span class="token punctuation">,</span> right<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span></code></pre>
+<p>从上面的代码中可以看到，<code>Eval()</code>函数的内部是由一个巨大的<code>swtich</code>语句组成的。遇到特定的<code>节点（Node）</code>就解释（Evaluating）相应的节点，这个还是比较好理解的，而<code>Eval()</code>函数的返回值就是我们前面提到的对象（Object）。</p>
+<p>下面我们分别来实现上面<code>switch</code>分支中的函数，这些函数的实现可能比你们想象的简单很多。</p>
+<h4 class="atx" id="解释程序（program）节点">解释程序（Program）节点</h4>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//eval.go</span>
+<span class="token keyword">func</span> <span class="token function">evalProgram</span><span class="token punctuation">(</span>program <span class="token operator">*</span>ast<span class="token punctuation">.</span>Program<span class="token punctuation">)</span> <span class="token punctuation">(</span>results Object<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    results <span class="token operator">=</span> <span class="token function">Eval</span><span class="token punctuation">(</span>program<span class="token punctuation">.</span>Expression<span class="token punctuation">)</span> <span class="token comment">//解释程序（Program）节点中包含的表达式</span>
+    <span class="token keyword">return</span> results
+<span class="token punctuation">}</span></code></pre>
+<p>对于程序（Program）节点的解释，仅仅是解释<code>程序（Program）节点</code>包含的表达式，这个应该也是比较好理解的。</p>
+<p>下面我们再来看看如何解释数字节点。</p>
+<h4 class="atx" id="解释数字节点">解释数字节点</h4>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//eval.go</span>
+
+<span class="token comment">//解释数字节点: 3.23, 5,...</span>
+<span class="token keyword">func</span> <span class="token function">evalNumber</span><span class="token punctuation">(</span>n <span class="token operator">*</span>ast<span class="token punctuation">.</span>NumberLiteral<span class="token punctuation">)</span> Object <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">NewNumber</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span>Value<span class="token punctuation">)</span> <span class="token comment">//生成一个数字对象并返回</span>
+<span class="token punctuation">}</span></code></pre>
+<p>当遇到数字节点的时候，我们只是简单的取出数字节点（<code>*ast.NumberLiteral</code>）中的值，然后调用<code>NewNumber</code>来生成一个之前介绍的<code>数字对象（Number Object）</code>，然后返回这个数字对象。</p>
+<h4 class="atx" id="解释前缀表达式（prefix-expression）节点">解释前缀表达式（prefix-expression）节点</h4>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//eval.go</span>
+<span class="token comment">//解释前缀表达式节点: -1.5, +2.3,...</span>
+<span class="token keyword">func</span> <span class="token function">evalPrefixExpression</span><span class="token punctuation">(</span>node <span class="token operator">*</span>ast<span class="token punctuation">.</span>PrefixExpression<span class="token punctuation">,</span> right Object<span class="token punctuation">)</span> Object <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> node<span class="token punctuation">.</span>Operator <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token string">"+"</span><span class="token punctuation">:</span> 
+        <span class="token keyword">return</span> <span class="token function">evalPlusPrefixOperatorExpression</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> right<span class="token punctuation">)</span>
+    <span class="token keyword">case</span> <span class="token string">"-"</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token function">evalMinusPrefixOperatorExpression</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> right<span class="token punctuation">)</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">evalPlusPrefixOperatorExpression</span><span class="token punctuation">(</span>node <span class="token operator">*</span>ast<span class="token punctuation">.</span>PrefixExpression<span class="token punctuation">,</span> right Object<span class="token punctuation">)</span> Object <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> right<span class="token punctuation">.</span><span class="token function">Type</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> NUMBER_OBJ <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> right
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">evalMinusPrefixOperatorExpression</span><span class="token punctuation">(</span>node <span class="token operator">*</span>ast<span class="token punctuation">.</span>PrefixExpression<span class="token punctuation">,</span> right Object<span class="token punctuation">)</span> Object <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> right<span class="token punctuation">.</span><span class="token function">Type</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> NUMBER_OBJ <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+    <span class="token punctuation">}</span>
+    value <span class="token operator">:=</span> right<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token operator">*</span>Number<span class="token punctuation">)</span><span class="token punctuation">.</span>Value
+    <span class="token keyword">return</span> <span class="token function">NewNumber</span><span class="token punctuation">(</span><span class="token operator">-</span>value<span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<p>对于前缀表达式节点，如果遇到诸如<code>+1.3</code>之类的节点的时候，我们只是判断一下对象的类型是否为<code>数字类型</code>，如果是的话，就简单返回这个<code>数字对象（Number object）</code>。当遇到诸如<code>-2.5</code>之类的节点的时候，同理，我们也只是判断一下对象的类型是否为<code>数字类型</code>，如果是的话，就将对象的值取负数，然后返回一个新的<code>数字对象（Number Object）</code>。</p>
+<blockquote>
+<p>细心的读者可能会注意到，我们的前缀表达式节点中，其实是不可能存在非数字节点的，所以上面的判断不是必须的。没错，对于简单的四则运算，我们确实不需要这个判断。但是我们将来会扩展这个方法，使其支持类似<code>!true</code>， <code>!false</code>等语法，即支持<code>!</code>这种前缀。</p>
+</blockquote>
+<h4 class="atx" id="解释中缀表达式（infix-expression）节点">解释中缀表达式（infix-expression）节点</h4>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//eval.go</span>
+<span class="token comment">//解释中缀表达式节点: 1.5 + 2.3, 3 * 5, ...</span>
+<span class="token keyword">func</span> <span class="token function">evalInfixExpression</span><span class="token punctuation">(</span>node <span class="token operator">*</span>ast<span class="token punctuation">.</span>InfixExpression<span class="token punctuation">,</span> left<span class="token punctuation">,</span> right Object<span class="token punctuation">)</span> Object <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> left<span class="token punctuation">.</span><span class="token function">Type</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> NUMBER_OBJ <span class="token operator">&amp;&amp;</span> right<span class="token punctuation">.</span><span class="token function">Type</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> NUMBER_OBJ<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token function">evalNumberInfixExpression</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> left<span class="token punctuation">,</span> right<span class="token punctuation">)</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">evalNumberInfixExpression</span><span class="token punctuation">(</span>node <span class="token operator">*</span>ast<span class="token punctuation">.</span>InfixExpression<span class="token punctuation">,</span> left<span class="token punctuation">,</span> right Object<span class="token punctuation">)</span> Object <span class="token punctuation">{</span>
+    leftVal <span class="token operator">:=</span> left<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token operator">*</span>Number<span class="token punctuation">)</span><span class="token punctuation">.</span>Value <span class="token comment">//取出左边的数字对象(Number Object)中保存的值</span>
+    rightVal <span class="token operator">:=</span> right<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token operator">*</span>Number<span class="token punctuation">)</span><span class="token punctuation">.</span>Value <span class="token comment">//取出右边的数字对象(Number Object)中保存的值</span>
+
+    <span class="token keyword">switch</span> node<span class="token punctuation">.</span>Operator <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token string">"+"</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token operator">&amp;</span>Number<span class="token punctuation">{</span>Value<span class="token punctuation">:</span> leftVal <span class="token operator">+</span> rightVal<span class="token punctuation">}</span>
+        <span class="token comment">//还可以使用: return NewNumber(leftVal + rightVal)</span>
+    <span class="token keyword">case</span> <span class="token string">"-"</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token operator">&amp;</span>Number<span class="token punctuation">{</span>Value<span class="token punctuation">:</span> leftVal <span class="token operator">-</span> rightVal<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token string">"*"</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token operator">&amp;</span>Number<span class="token punctuation">{</span>Value<span class="token punctuation">:</span> leftVal <span class="token operator">*</span> rightVal<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token string">"/"</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token operator">&amp;</span>Number<span class="token punctuation">{</span>Value<span class="token punctuation">:</span> leftVal <span class="token operator">/</span> rightVal<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token string">"%"</span><span class="token punctuation">:</span>
+        v <span class="token operator">:=</span> math<span class="token punctuation">.</span><span class="token function">Mod</span><span class="token punctuation">(</span>leftVal<span class="token punctuation">,</span> rightVal<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token operator">&amp;</span>Number<span class="token punctuation">{</span>Value<span class="token punctuation">:</span> v<span class="token punctuation">}</span>
+    <span class="token keyword">case</span> <span class="token string">"**"</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token operator">&amp;</span>Number<span class="token punctuation">{</span>Value<span class="token punctuation">:</span> math<span class="token punctuation">.</span><span class="token function">Pow</span><span class="token punctuation">(</span>leftVal<span class="token punctuation">,</span> rightVal<span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>这个代码实际上没有太多可说的。取出数字对象中存储的值，然后利用<code>go</code>语言进行四则运算后，生成新的<code>数字对象（Number Object）</code>返回。</p>
+<blockquote>
+<p>注意：这里并没有处理除法的除数为【0】的情况，只是为了使程序更简单罢了。真正的脚本语言是必须要考虑到这层因素的。当然加上这个逻辑也是比较简单的，相信读者应该能够自行完成。</p>
+<p>实际上，如果不处理这种异常情况，<code>go</code>语言自身也会抛出异常，从而导致我们的脚本语言解释器异常终了。之后我们扩展的时候，会加入异常的捕获。</p>
+</blockquote>
+<p>It's Amazing！不是吗？这就是所有的解释代码。好了，又到了测试解释器的时候了。</p>
+<h3 class="atx" id="测试解释器">测试解释器</h3>
+<pre><code class="fenced-code-block language-go"><span class="token comment">//main.go</span>
+
+<span class="token keyword">func</span> <span class="token function">TestEval</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    tests <span class="token operator">:=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token keyword">struct</span> <span class="token punctuation">{</span>
+        input    <span class="token builtin">string</span> <span class="token comment">//输入</span>
+        expected <span class="token builtin">string</span> <span class="token comment">//期待值</span>
+    <span class="token punctuation">}</span><span class="token punctuation">{</span>
+        <span class="token punctuation">{</span><span class="token string">"-1 - 2.333"</span><span class="token punctuation">,</span> <span class="token string">"-3.333"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token string">"+1 + 2"</span><span class="token punctuation">,</span> <span class="token string">"3"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token string">"2 + (3 * 4) / ( 6 - 3 ) + 10"</span><span class="token punctuation">,</span> <span class="token string">"16"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token string">"2 + 3 * 4 / 6 - 3  + 10"</span><span class="token punctuation">,</span> <span class="token string">"11"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token string">"(5 + 2) * (4 - 2) + 6"</span><span class="token punctuation">,</span> <span class="token string">"20"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token string">"5 + 2 * 4 - 2 + 6"</span><span class="token punctuation">,</span> <span class="token string">"17"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token string">"5 + 2.1 * 4 - 2 + 6.2"</span><span class="token punctuation">,</span> <span class="token string">"17.6"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token string">"2 + 2 ** 2 ** 3"</span><span class="token punctuation">,</span> <span class="token string">"258"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span><span class="token string">"10"</span><span class="token punctuation">,</span> <span class="token string">"10"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> tt <span class="token operator">:=</span> <span class="token keyword">range</span> tests <span class="token punctuation">{</span>
+        l <span class="token operator">:=</span> lexer<span class="token punctuation">.</span><span class="token function">NewLexer</span><span class="token punctuation">(</span>tt<span class="token punctuation">.</span>input<span class="token punctuation">)</span> <span class="token comment">//创建新的词法分析器</span>
+        p <span class="token operator">:=</span> parser<span class="token punctuation">.</span><span class="token function">NewParser</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span> <span class="token comment">//将词法分析器(Lexer)作为输入传给语法解析器（Parser）</span>
+        program <span class="token operator">:=</span> p<span class="token punctuation">.</span><span class="token function">ParseProgram</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//解析程序（Program）节点</span>
+        evaluated <span class="token operator">:=</span> eval<span class="token punctuation">.</span><span class="token function">Eval</span><span class="token punctuation">(</span>program<span class="token punctuation">)</span> <span class="token comment">//解释程序</span>
+        <span class="token keyword">if</span> evaluated <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> evaluated<span class="token punctuation">.</span><span class="token function">Inspect</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> tt<span class="token punctuation">.</span>expected <span class="token punctuation">{</span>
+                fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"%s"</span><span class="token punctuation">,</span> evaluated<span class="token punctuation">.</span><span class="token function">Inspect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">"%s = %s\n"</span><span class="token punctuation">,</span> tt<span class="token punctuation">.</span>input<span class="token punctuation">,</span> tt<span class="token punctuation">.</span>expected<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">TestEval</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 class="atx" id="总结">总结</h2>
+<p>我们从介绍词元（Token）开始，到词法分析器（Lexer）输出词元（Token），再到语法解析器（Parser）根据输入的词元（Token），解析后生成抽象语法树（AST），最后到解释器（Evaluator）解释抽象语法树（AST），返回对象系统（Object System）中的对象。一步一个脚印的实现了一个简单的能够处理四则运算的计算器。有没有点非常激动人心的感觉？</p>
+<p>很多读者可能会说，这么简单的四则运算的实现，你这也搞得太复杂了吧。这个我必须得承认，确实搞得有点太复杂了。使用堆栈的方式（或者EBNF的方式）很容易就能够实现一个这样的四则运算解释器了。但是这个设计，为以后的程序扩展带来了很多的便利。之后的文章，我们会在现有的代码的基础上，实现if-else判断，for/while循环(break, continue)，数组/元组/哈希支持，函数（支持多值返回），内置函数，导入<code>go</code>语言的package和变量，导入(import)别人写的代码，结构（struct）支持，甚至让我们的解释器在浏览器中运行等等功能。</p>
+<p>鉴于本篇的内容比较多，而且是后续文章的基础，所以这里建议初学者认真体会。最好多读几遍，以达到最终完全掌握的目的。</p>
+<p>如果读者希望进一步学习的话，请继续关注我的下一篇文章，我们下次见！</p>
+</article>
+</body>
+</html>
