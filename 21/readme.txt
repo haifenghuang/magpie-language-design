@@ -1,0 +1,1 @@
+Add 'named function' support
