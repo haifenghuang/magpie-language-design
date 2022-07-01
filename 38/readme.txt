@@ -1,0 +1,1 @@
+Add anonymous functions(lambdas) support
