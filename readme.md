@@ -46,7 +46,7 @@
 
 对于每一篇所新增加的内容，读者可以使用比较工具，来查看新增的代码逻辑。
 
-下面是目录：
+下面是目录(中文文档见doc目录)：
 
 1. Simple Math Expression Evaluation
 2. Add Identifier for lexer & parser
