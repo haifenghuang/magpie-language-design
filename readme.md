@@ -28,7 +28,7 @@
 1. Crafting Interpreters(https://craftinginterpreters.com/)
 2. Let's Build A Simple Interpreter(https://ruslanspivak.com/lsbasi-part1/)
 
-但是由于它们都是英文的，所以有些读者可能读起来可能会感到比较吃力。
+但是由于它们都是英文的，所以有些读者读起来可能会感到比较吃力。
 
 ## 运行
 每篇文章对应的代码目录下都有一个`run.sh`文件，只需要运行这个文件即可。
