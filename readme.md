@@ -48,56 +48,56 @@
 
 下面是目录(中文文档见doc目录)：
 
-1. Simple Math Expression Evaluation
-2. Add Identifier for lexer & parser
-3. Add evaluation for 'true, false, nil'
-4. Add 'let' statement
-5. Add scope
-6. Add logic for evaluate 'letStatement' & 'identifier expression'
-7. Add error handling for evaluation phase
-8. Add 'return statement'
-9. Add 'block statement'
-10. Add 'String' handling
-11. Add 'function literal' & 'function call' handling
-12. Add 'builtin function' support
-13. Add 'if-else' expression support
-14. Add'!' support
-15. Add 'array' & 'array index' support
-16. Add 'Hash' support
-17. Add 'method-call' support
-18. Add loop support
-19. Add 'assignment' support
-20. Add 'tuple' support
-21. Add 'named function' support
-22. Add wasm support
-23. Add 'for loop' support
-24. Add 'do & while' loop support
-25. Add multiple assignment & return-values
-26. Add 'printf' builtin support
-27. Add '&&' and '||' support
-28. Add 'import' statement
-29. Add comment support
-30. Add 'regular-expression' support
-31. Add 'goObj' support
+1. 简单计算器
+2. 识别标识符（identifier）
+3. true, false和nil支持
+4. Let语句支持
+5. Scope（作用域）
+6. 追加对`let`语句和标识符的解释（Evaluating）
+7. 运行期错误处理（Run-Time error handling）
+8. `return`语句支持
+9. `块语句`支持
+10. 字符串表达式支持
+11. 函数支持
+12. `内置（Built-in）函数`支持
+13. if-else判断支持
+14. 取反（!）支持
+15. 数组支持
+16. 哈希支持
+17. `方法调用（Method Call）`支持
+18. `后缀表达式(++、--)`支持
+19. `赋值表达式(=)`支持
+20. 元祖（Tuple）支持
+21. `命名函数(Named function)`支持
+22. `与浏览器交互`支持
+23. for循环支持
+24. while和do循环支持
+25. 多重赋值 & 多重返回值
+26. `printf函数`支持
+27. `逻辑与(&&)、逻辑或(||)`支持
+28. `import`支持
+29. 重写main函数
+30. `正则表达式`支持
+31. 与`go`语言交互
 32. Panic, panic, panic...
-33. Add builtin 'file' object
-34. Add builtin 'os' object
-35. Add struct support
-36. Add switch support
-37. Add try-catch-finally support
-38. Add anonymous functions(lambdas) support
-39. Comparison operator Chaining(a < b < c) support
-40. Add 'in' operator support
-41. Add range operator('..') support
-42. Variadic Functions
-43. Compound assignment operators(+=, -=, etc)
-44. True multiple assignment
-45. TCO(tail call optimization) support
-46. 'Interpolated String' support
-47. Decorator support
-48. command execution
-49. enhanced hash support
-50. pipe operator(|>)
-51. ordered hash
-52. singe binary executable
-53. standard library
+33. `file`内置对象支持
+34. `os`内置对象支持
+35. `struct`支持
+36. `switch-case`支持
+37. `try-catch-finally`支持
+38. `匿名函数`支持
+39. `链式比较操作符`支持
+40. `in操作符`支持
+41. `范围操作符(..)`支持
+42. `变参函数(Variadic Functions)`支持
+43. `复合赋值运算符`支持
+44. 真正意义上的多重赋值
+45. 尾递归调用优化（Tail Recursive Call Optimization）
+46. `字符串变量内插`支持
+47. `函数装饰器（Decorator）`支持
+48. `命令执行（Command Execution）`支持
+49. `增强哈希（Enhanced Hash）`支持
+50. `管道操作符（|>）`支持
+51. `有序哈希（Ordered Hash）`支持
+52. `单一执行文件(single standalone exe)`支持
+53. `标准库（standard library）`支持
