@@ -79,7 +79,7 @@ printf("slice_result=%s\n", slice_result)
 
 //test 'Contains'
 contains_result = Linq([1,2,3,4,5,6,7,8,9,10])
-	.Contains(8)
+	.Contains(8, nil)
 printf("contains_result=%t\n", contains_result)
 
 //test 'GroupBy'

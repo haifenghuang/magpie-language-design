@@ -304,19 +304,6 @@ struct Linq {
 		return self.Skip(startIndex).Take(count)
 	}
 
-	fn Contains(value) {
-		container = self.Container
-		length = len(container)
-
-		for (i = 0; i < length; i++) {
-			if container[i] == value {
-				return true
-			}
-		}
-
-		return false
-	}
-
 	fn GroupBy(groupByFn) {
 		container = self.Container
 		r = {}
