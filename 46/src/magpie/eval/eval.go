@@ -381,7 +381,10 @@ func evalTryStatement(tryStmt *ast.TryStmt, scope *Scope) Object {
 	}
 
 	if tryStmt.Finally != nil { //finally will always run(if has)
-		return evalBlockStatement(tryStmt.Finally, scope)
+		rv = evalBlockStatement(tryStmt.Finally, scope)
+		if (rv.Type() == ERROR_OBJ) {
+			return rv
+		}
 	}
 
 	if throwNotHandled {

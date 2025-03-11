@@ -355,7 +355,10 @@ func evalTryStatement(tryStmt *ast.TryStmt, scope *Scope) Object {
 	}
 
 	if tryStmt.Finally != nil { //解释'finally'块（如果有）
-		return evalBlockStatement(tryStmt.Finally, scope)
+		rv = evalBlockStatement(tryStmt.Finally, scope)
+		if (rv.Type() == ERROR_OBJ) {
+			return rv
+		}
 	}
 
 	if throwNotHandled { //如果没有处理throw，则继续抛出throw对象
@@ -366,7 +369,7 @@ func evalTryStatement(tryStmt *ast.TryStmt, scope *Scope) Object {
 }
 ```
 
-`evalThrowStatement`函数仅仅生成一个`Throw对象`返回。`evalTryStatement`函数稍微复杂一点，它先解释`try`的语句块（block），如果语句块中返回的是一个`throw对象`，说明有抛出的异常。然后判断是否有`catch`语句，如果有的话，就处理`catch块`（47-56行的`if`判断）。如果没有的话，说明异常没有被处理，我们会在66行的判断语句中继续抛出这个异常，最后是处理`finally块`（61-63行）。
+`evalThrowStatement`函数仅仅生成一个`Throw对象`返回。`evalTryStatement`函数稍微复杂一点，它先解释`try`的语句块（block），如果语句块中返回的是一个`throw对象`，说明有抛出的异常。然后判断是否有`catch`语句，如果有的话，就处理`catch块`（47-56行的`if`判断）。如果没有的话，说明异常没有被处理，我们会在66行的判断语句中继续抛出这个异常，最后是处理`finally块`。
 
 上面说过，解释`try语句块(Block)`的时候，它可能会返回一个`throw`对象。但是我们还没有处理这种情况，因此需要修改`evalBlockStatement`函数：
 
