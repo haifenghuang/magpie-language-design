@@ -139,7 +139,7 @@ func evalProgram(program *ast.Program, scope *Scope) (results Object) {
 }
 
 func evalBlockStatement(block *ast.BlockStatement, scope *Scope) Object {
-	var result Object
+	var result Object = NIL
 	for _, statement := range block.Statements {
 		result = Eval(statement, scope)
 		if result != nil {
