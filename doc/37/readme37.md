@@ -326,7 +326,7 @@ func evalTryStatement(tryStmt *ast.TryStmt, scope *Scope) Object {
 		return rv
 	}
 
-	//如果有'catch e'这样的语句出现，我们会将其加入scope中（下面51行的代码），以便在catch块中使用这个变量。
+	//如果有'catch e'这样的语句出现，我们会将其加入scope中，以便在catch块中使用这个变量。
 	//而这个'e'只在这个catch块中有效，所以结束后，我们需要将其从scope中删除
 	defer func() {
 		if tryStmt.Catch != nil {
@@ -338,12 +338,19 @@ func evalTryStatement(tryStmt *ast.TryStmt, scope *Scope) Object {
 
 	throwNotHandled := false
 	var throwObj Object = NIL
-	if rv.Type() == THROW_OBJ { //如果try块返回的是一个throw对象
-		throwObj = rv.(*Throw)
+	if rv.Type() == THROW_OBJ { //如果try块返回的是一个throw对象或者是Error对象
 		if tryStmt.Catch != nil { //如果有'catch'语句
-			if tryStmt.Var != "" { //'cathe e'
-				 //将throw对象放入这个key为'e'的scope中
-				scope.Set(tryStmt.Var, rv.(*Throw).value)
+			if rv.Type() == THROW_OBJ {
+				throwObj = rv.(*Throw)
+				if tryStmt.Var != "" { //'cathe e'
+				 	//将throw对象放入这个key为'e'的scope中
+					scope.Set(tryStmt.Var, rv.(*Throw).value)
+				}
+			} else { //Error对象
+				throwObj = rv
+				if tryStmt.Var != "" {
+					scope.Set(tryStmt.Var, rv)
+				}
 			}
 			rv = evalBlockStatement(tryStmt.Catch, catchScope) //解释catch块
 			if rv.Type() == ERROR_OBJ {
@@ -369,7 +376,7 @@ func evalTryStatement(tryStmt *ast.TryStmt, scope *Scope) Object {
 }
 ```
 
-`evalThrowStatement`函数仅仅生成一个`Throw对象`返回。`evalTryStatement`函数稍微复杂一点，它先解释`try`的语句块（block），如果语句块中返回的是一个`throw对象`，说明有抛出的异常。然后判断是否有`catch`语句，如果有的话，就处理`catch块`（47-56行的`if`判断）。如果没有的话，说明异常没有被处理，我们会在66行的判断语句中继续抛出这个异常，最后是处理`finally块`。
+`evalThrowStatement`函数仅仅生成一个`Throw对象`返回。`evalTryStatement`函数稍微复杂一点，它先解释`try`的语句块（block），如果语句块中返回的是一个`throw对象`，说明有抛出的异常。然后判断是否有`catch`语句，如果有的话，就处理`catch块`。如果没有的话，说明异常没有被处理，我们会在66行的判断语句中继续抛出这个异常，最后是处理`finally块`。
 
 上面说过，解释`try语句块(Block)`的时候，它可能会返回一个`throw`对象。但是我们还没有处理这种情况，因此需要修改`evalBlockStatement`函数：
 

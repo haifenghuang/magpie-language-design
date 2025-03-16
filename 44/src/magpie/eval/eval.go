@@ -317,9 +317,6 @@ func evalThrowStatement(t *ast.ThrowStmt, scope *Scope) Object {
 
 func evalTryStatement(tryStmt *ast.TryStmt, scope *Scope) Object {
 	rv := Eval(tryStmt.Try, scope)
-	if rv.Type() == ERROR_OBJ {
-		return rv
-	}
 
 	defer func() {
 		if tryStmt.Catch != nil {
@@ -331,12 +328,20 @@ func evalTryStatement(tryStmt *ast.TryStmt, scope *Scope) Object {
 
 	throwNotHandled := false
 	var throwObj Object = NIL
-	if rv.Type() == THROW_OBJ {
-		throwObj = rv.(*Throw)
+	if rv.Type() == THROW_OBJ || rv.Type() == ERROR_OBJ {
 		if tryStmt.Catch != nil {
-			if tryStmt.Var != "" {
-				scope.Set(tryStmt.Var, rv.(*Throw).value)
+			if rv.Type() == THROW_OBJ {
+				throwObj = rv.(*Throw)
+				if tryStmt.Var != "" {
+					scope.Set(tryStmt.Var, rv.(*Throw).value)
+				}
+			} else {
+				throwObj = rv
+				if tryStmt.Var != "" {
+					scope.Set(tryStmt.Var, rv)
+				}
 			}
+
 			rv = evalBlockStatement(tryStmt.Catch, scope) //catch Block
 			if rv.Type() == ERROR_OBJ {
 				return rv
