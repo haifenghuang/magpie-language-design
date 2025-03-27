@@ -42,9 +42,9 @@ func printlnBuiltin() *Builtin {
 
 			resultStr := ""
 			for _, arg := range args {
-				resultStr = resultStr + arg.Inspect() + "\n"
+				resultStr = resultStr + arg.Inspect()
 			}
-			fmt.Fprint(scope.Writer, resultStr)
+			fmt.Fprintln(scope.Writer, resultStr)
 			return NIL
 		},
 	}

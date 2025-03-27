@@ -219,9 +219,9 @@ fn println_function(line string, scope *Scope, args ...Object) Object {
 
     resultStr := ""
 	for _, arg := range args {
-		resultStr = resultStr + arg.Inspect() + "\n"
+		resultStr = resultStr + arg.Inspect()
 	}
-	fmt.Print(resultStr)
+	fmt.Println(resultStr)
 	return NIL
 }
 
